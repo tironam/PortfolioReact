@@ -6,7 +6,9 @@ import {
   BrowserRouter as Router
 } from 'react-router-dom'
 import Navbar from './components/Navbar'
-import Portfolio from './components/Portfolio'
+import Portfolio from './pages/Portfolio'
+import About from './pages/About'
+import Contact from './pages/Contact'
 
 const App = () => {
   return (
@@ -19,9 +21,15 @@ const App = () => {
           <Route exact path="/">
             <About />
           </Route>
+          <Route exact path="/portfolio">
+            <Portfolio />
+          </Route>
+          <Route exact path="/contact">
+            <Contact />
+          </Route>
         </Switch>
       </Router>
-    </div>
+    </>
   )
 }
 
