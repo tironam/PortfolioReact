@@ -13,9 +13,6 @@ const useStyles = makeStyles((theme) => ({
     root: {
         flexGrow: 0,
     },
-    // menuButton: {
-    //     marginRight: theme.spacing(2),
-    // },
     title: {
         flexGrow: 1,
     },
@@ -25,6 +22,7 @@ const useStyles = makeStyles((theme) => ({
     },
     bar: {
         marginBottom: 20,
+        color: '#7DFADE'
     },
     iconBtn: {
         color: 'white'
