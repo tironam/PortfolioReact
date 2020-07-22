@@ -1,12 +1,13 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link } from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles'
 import AppBar from '@material-ui/core/AppBar'
 import Toolbar from '@material-ui/core/Toolbar'
 import Typography from '@material-ui/core/Typography'
 import Button from '@material-ui/core/Button'
-import IconButton from '@material-ui/core/IconButton'
-import MenuIcon from '@material-ui/icons/Menu'
+import GitHubIcon from '@material-ui/icons/GitHub'
+import LinkedInIcon from '@material-ui/icons/LinkedIn'
+import { IconButton } from '@material-ui/core'
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -24,6 +25,9 @@ const useStyles = makeStyles((theme) => ({
     },
     bar: {
         marginBottom: 20,
+    },
+    iconBtn: {
+        color: 'white'
     }
 }))
 
@@ -34,16 +38,14 @@ const Navbar = () => {
             <AppBar position="static">
                 <Toolbar>
                     <Typography variant="h6" className={classes.title}>
-                        <Link to="/" className={classes.link}>
-                            Michael Tirona
-            </Link>
+                        Michael Tirona
                     </Typography>
-                    <Link to="/portfolio" className={classes.link}>
-                        <Button color="inherit">Portfolio</Button>
-                    </Link>
-                    <Link to="/contact" className={classes.link}>
-                        <Button color="inherit" >Contact</Button>
-                    </Link>
+                    <IconButton href="https://github.com/tironam" className={classes.iconBtn}>
+                        <GitHubIcon  />
+                    </IconButton>
+                    <IconButton href="https://www.linkedin.com/in/michael-tirona-9990a7101/" className={classes.iconBtn}>
+                        <LinkedInIcon />
+                    </IconButton>
                 </Toolbar>
             </AppBar>
         </div>
