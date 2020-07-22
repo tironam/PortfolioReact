@@ -40,10 +40,10 @@ const Navbar = () => {
                     <Typography variant="h6" className={classes.title}>
                         Michael Tirona
                     </Typography>
-                    <IconButton href="https://github.com/tironam" className={classes.iconBtn}>
+                    <IconButton href="https://github.com/tironam" className={classes.iconBtn} target="_blank">
                         <GitHubIcon  />
                     </IconButton>
-                    <IconButton href="https://www.linkedin.com/in/michael-tirona-9990a7101/" className={classes.iconBtn}>
+                    <IconButton href="https://www.linkedin.com/in/michael-tirona-9990a7101/" className={classes.iconBtn} target="_blank">
                         <LinkedInIcon />
                     </IconButton>
                 </Toolbar>
