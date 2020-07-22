@@ -1,13 +1,14 @@
 import React from 'react'
-import { makeStyles } from '@material-ui/core/styles'
+import { makeStyles, useTheme } from '@material-ui/core/styles'
 import Grid from '@material-ui/core/Grid'
 import Card from '@material-ui/core/Card'
 import CardActions from '@material-ui/core/CardActions'
 import CardContent from '@material-ui/core/CardContent'
+import CardMedia from '@material-ui/core/CardMedia'
 import Button from '@material-ui/core/Button'
 import Typography from '@material-ui/core/Typography'
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
     root: {
         minWidth: 275,
     },
@@ -23,42 +24,32 @@ const useStyles = makeStyles({
         marginBottom: 12,
     },
     card: {
-        marginTop: 15,
+        marginLeft: 0,
     },
-})
+    img: {
+        maxHeight: 300,
+    },
+    profile: {
+        width: 250,
+    }
+}))
 
 
 const About = () => {
     const classes = useStyles()
-    const bull =<span className={classes.bullet}>.</span>
+    const theme = useTheme()
 
     return (
-        <Grid container spacing={3}>
-            <Grid item xs={12} sm={6}>
-                <Card className={classes.root, classes.card}>
-                    <CardContent>
-                        <Typography className={classes.title} color="textSecondary" gutterBottom>
-                            Front end web developer, fascinated by innovation and inspired by challenge. Studied full stack web development at a 12 week coding bootcamp at UCI's school of continuing education, where I became versed in HTML, CSS, JavaScript, NodeJS, Express, MySQL, Sequelize, NoSQL, MongoDB, Mongoose, and ReactJS.
-                        </Typography>
-                        {/* <Typography variant="h5" component="h2">
-                            be{bull}nev{bull}o{bull}lent
-                        </Typography> */}
-                        {/* <Typography className={classes.pos} color="textSecondary">
-                            adjective
-                        </Typography>
-                        <Typography variant="body2" component="p">
-                            well meaning and kindly.
-                            <br />
-                            {'"a benevolent smile"'}
-                        </Typography> */}
-                    </CardContent>
-                    {/* <CardActions>
-                        <Button size="small">Learn More</Button>
-                    </CardActions> */}
-                </Card>
-            </Grid>
+    <>
+        <Grid
+            container
+            direction="row"
+            justify="center"
+            alignItems="center"
+        >
+                <img className={classes.img} src={'https://scontent-lax3-2.xx.fbcdn.net/v/t1.0-9/17884179_10156012067398154_8836003987201545848_n.jpg?_nc_cat=107&_nc_sid=174925&_nc_oc=AQlVAdZpNYB7YTRWIZoi7D5CyftdvvqOmYoGr3RSTnnMVlQ7C5jdUfHf3JUmr4oDLYE&_nc_ht=scontent-lax3-2.xx&oh=586160818275b1ba26f6b707ee820dde&oe=5F1BE04B'} />
         </Grid>
-        
+    </>
     )
 }
 
