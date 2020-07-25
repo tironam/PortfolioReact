@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { Component } from 'react'
 import { makeStyles, useTheme } from '@material-ui/core/styles'
 import Navbar from '../../components/Navbar'
+import ProjectCard from '../../components/ProjectCard'
 import './about.css'
 import Grid from '@material-ui/core/Grid'
 import Card from '@material-ui/core/Card'
@@ -30,7 +31,7 @@ const useStyles = makeStyles((theme) => ({
         marginLeft: 0,
     },
     img: {
-        maxHeight: 300,
+        maxHeight: 275,
         borderRadius: 200,
         margin: 5
     },
@@ -42,11 +43,17 @@ const useStyles = makeStyles((theme) => ({
         textAlign: 'center',
         // backgroundColor: '#FEAF8A',
         maxWidth: 400
+    },
+    text: {
+        margin: theme.spacing(2)
+    },
+    title: {
+        margin: theme.spacing(5)
     }
 }))
 
 
-const About = () => {
+const About = props => {
     const classes = useStyles()
     const theme = useTheme()
 
@@ -60,15 +67,29 @@ const About = () => {
             alignItems="center"
             sm={12}
         >
-            <Paper className={classes.paper}>
-                <img className={classes.img} src={'https://scontent-lax3-2.xx.fbcdn.net/v/t1.0-9/17884179_10156012067398154_8836003987201545848_n.jpg?_nc_cat=107&_nc_sid=174925&_nc_oc=AQlVAdZpNYB7YTRWIZoi7D5CyftdvvqOmYoGr3RSTnnMVlQ7C5jdUfHf3JUmr4oDLYE&_nc_ht=scontent-lax3-2.xx&oh=586160818275b1ba26f6b707ee820dde&oe=5F1BE04B'} />
-                <Typography>
-                        Front end web developer fascinated by innovation with a background in film and art. Dedicated to building user-friendly, responsive apps. A team-player with an eagerness to learn new technologies. Earned a certificate from UCI's 12-week intensive full stack web development coding boot camp. There I developed skills in React, JavaScript, and responsive web design, along with other essential web development technologies. 
-                </Typography>
-            </Paper>
+            <img className={classes.img} src={'https://scontent-lax3-2.xx.fbcdn.net/v/t1.0-9/17884179_10156012067398154_8836003987201545848_n.jpg?_nc_cat=107&_nc_sid=174925&_nc_oc=AQlVAdZpNYB7YTRWIZoi7D5CyftdvvqOmYoGr3RSTnnMVlQ7C5jdUfHf3JUmr4oDLYE&_nc_ht=scontent-lax3-2.xx&oh=586160818275b1ba26f6b707ee820dde&oe=5F1BE04B'} />
+            <Typography className={classes.text}>
+                Front end web developer fascinated by innovation with a background in film and art. Dedicated to building user-friendly, responsive apps. A team-player with an eagerness to learn new technologies. Earned a certificate from UCI's 12-week intensive full stack web development coding boot camp. There I developed skills in React, JavaScript, and responsive web design, along with other essential web development technologies. 
+            </Typography>
+        </Grid>
+        <Grid
+            container
+            direction="row"
+            justify="center"
+            alignItems="center"
+            sm={12}
+        >
+            <Typography className={classes.title} variant="h2">
+                Projects
+            </Typography>
+            <ProjectCard
+                name="Dewey"
+                description="Full stack library app to search for and save books a user owns. Built using PassPortJS, MongoDB, Mongoose, React, Material-UI, Reactstrap, and the OpenLibrary Search API."
+            />
         </Grid>
     </>
     )
 }
+
 
 export default About
