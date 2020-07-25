@@ -85,6 +85,23 @@ const About = props => {
             <ProjectCard
                 name="Dewey"
                 description="Full stack library app to search for and save books a user owns. Built using PassPortJS, MongoDB, Mongoose, React, Material-UI, Reactstrap, and the OpenLibrary Search API."
+                role="I worked on authentication, sign up and login pages, and the ui."
+                GitHub="https://github.com/usrs/Dewey"
+                App="http://dewey.works"
+            />
+            <ProjectCard 
+                name="Listivity"
+                description="Full stack app that tracks all the activities a user said they wanted to do. Organizes activities by category and allows you to pick an activity at random. Utilizes MySQL, Sequelize, and Bootstrap."
+                role="The project was built together by the team in a collaborative setting. Each member of the team took turns coding while sharing their screen and everyone watching assisted"
+                GitHub="https://github.com/ShaneMit/Project2"
+                App="https://radiant-woodland-54871.herokuapp.com/login.html"
+            />
+            <ProjectCard 
+                name="CoZone"
+                description="A front end Covid-19 tracking app that allows the user to search case data by country. Utilizes Google’s Maps JavaScript and Places APIs and the covid19 API."
+                role="I worked on integrating both Google APIs. "
+                GitHub="https://github.com/TuffLuffJimmy/CoZone"
+                App="https://tuffluffjimmy.github.io/CoZone/"
             />
         </Grid>
     </>
