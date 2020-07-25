@@ -11,6 +11,8 @@ import CardMedia from '@material-ui/core/CardMedia'
 import Button from '@material-ui/core/Button'
 import Typography from '@material-ui/core/Typography'
 import Paper from '@material-ui/core/Paper'
+import "animate.css/animate.min.css"
+import ScrollAnimation from 'react-animate-on-scroll'
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -78,10 +80,13 @@ const About = props => {
             justify="center"
             alignItems="center"
             sm={12}
-        >
+            >  
+            <ScrollAnimation animateIn="fadeIn">
             <Typography className={classes.title} variant="h2">
                 Projects
             </Typography>
+            </ScrollAnimation>
+            <ScrollAnimation animateIn="fadeIn">
             <ProjectCard
                 name="Dewey"
                 description="Full stack library app to search for and save books a user owns. Built using PassPortJS, MongoDB, Mongoose, React, Material-UI, Reactstrap, and the OpenLibrary Search API."
@@ -89,6 +94,8 @@ const About = props => {
                 GitHub="https://github.com/usrs/Dewey"
                 App="http://dewey.works"
             />
+            </ScrollAnimation>
+            <ScrollAnimation animateIn="fadeIn">
             <ProjectCard 
                 name="Listivity"
                 description="Full stack app that tracks all the activities a user said they wanted to do. Organizes activities by category and allows you to pick an activity at random. Utilizes MySQL, Sequelize, and Bootstrap."
@@ -96,6 +103,8 @@ const About = props => {
                 GitHub="https://github.com/ShaneMit/Project2"
                 App="https://radiant-woodland-54871.herokuapp.com/login.html"
             />
+            </ScrollAnimation>
+            <ScrollAnimation animateIn="fadeIn">
             <ProjectCard 
                 name="CoZone"
                 description="A front end Covid-19 tracking app that allows the user to search case data by country. Utilizes Google’s Maps JavaScript and Places APIs and the covid19 API."
@@ -103,6 +112,7 @@ const About = props => {
                 GitHub="https://github.com/TuffLuffJimmy/CoZone"
                 App="https://tuffluffjimmy.github.io/CoZone/"
             />
+            </ScrollAnimation>
         </Grid>
     </>
     )
