@@ -5,8 +5,7 @@ import AppBar from '@material-ui/core/AppBar'
 import Toolbar from '@material-ui/core/Toolbar'
 import Typography from '@material-ui/core/Typography'
 import Button from '@material-ui/core/Button'
-import GitHubIcon from '@material-ui/icons/GitHub'
-import LinkedInIcon from '@material-ui/icons/LinkedIn'
+import CopyrightIcon from '@material-ui/icons/Copyright';
 import { IconButton } from '@material-ui/core'
 
 const useStyles = makeStyles((theme) => ({
@@ -18,7 +17,12 @@ const useStyles = makeStyles((theme) => ({
     },
     appBar: {
         top: "auto",
-        bottom: 0
+        bottom: 0,
+    },
+    title: {
+        textAlign: "center",
+        verticalAlign: "middle",
+        display: "inline-flex"
     }
 }))
 
@@ -28,8 +32,8 @@ const Footer = () => {
         <div className={classes.root, classes.appBar}>
             <AppBar position="bottom" color="null">
                 <Toolbar>
-                    <Typography color="white" alignItems="center">
-                        Copyright 2020 Michael Tirona
+                    <Typography color="white" position="static" className={classes.title}>
+                        <span><CopyrightIcon />     </span>  Michael Tirona 2020
                     </Typography>
                 </Toolbar>
             </AppBar>

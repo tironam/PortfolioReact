@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { makeStyles, useTheme } from '@material-ui/core/styles'
 import Navbar from '../../components/Navbar'
-import Footer from '../../components/Footer'
 import ProjectCard from '../../components/ProjectCard'
 import './about.css'
 import Grid from '@material-ui/core/Grid'
@@ -15,6 +14,7 @@ import Paper from '@material-ui/core/Paper'
 import GitHubIcon from '@material-ui/icons/GitHub'
 import LinkedInIcon from '@material-ui/icons/LinkedIn'
 import EmailIcon from '@material-ui/icons/Email'
+import CopyrightIcon from '@material-ui/icons/Copyright'
 import { IconButton } from '@material-ui/core'
 import "animate.css/animate.min.css"
 import ScrollAnimation from 'react-animate-on-scroll'
@@ -148,12 +148,9 @@ const About = props => {
             sm={12}>
             <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
                 <Typography className={classes.title} variant="h2">
-                    Contact
+                    Let's work together
                 </Typography>
             </ScrollAnimation>
-                <Typography className={[classes.text, classes.container].join(' ')} align="center">
-                    Available for full time, part time, and freelance opportunities. Email is preferred method of contact. 
-            </Typography>
         </Grid>
         <Grid
             container
@@ -162,8 +159,8 @@ const About = props => {
             alignItems="center"
             sm={12}>
             <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
-                <Typography className={classes.title} variant="h5">
-                    tironamichael@gmail.com  |  (714) 213-2001
+                <Typography className={classes.title} variant="h5" component="a" href="mailto:tironamichael@gmail.com">
+                    tironamichael@gmail.com
                 </Typography>
             </ScrollAnimation>
         </Grid>
@@ -179,7 +176,16 @@ const About = props => {
                 <LinkedInIcon fontSize="large" />
             </IconButton>
         </Grid>
-        <Footer />
+        <Grid
+            container
+            direction="row"
+            justify="center"
+            alignItems="center">
+                <CopyrightIcon className={classes.icon} />
+                <Typography className={classes.text}>
+                    Michael Tirona. All Right Reserved.
+                </Typography>
+        </Grid>
     </>
     )
 }
