@@ -97,7 +97,7 @@ const About = props => {
                 <Typography className={classes.text} align="center">
                     Southern California-based front end web developer fascinated by innovation with a background in film and art. A team-player with an eagerness to learn new technologies and dedicated to building user-friendly, responsive apps.  Earned a certificate from UCI's 12-week intensive full stack web development coding boot camp. There I developed skills in React, JavaScript, responsive web design, along with other essential web development technologies. 
                 </Typography>
-                        <Typography className={classes.text} align="center">
+                <Typography className={classes.text} align="center">
                     With nearly a decade's worth of experience at The Walt Disney Company and Apple, I thrive on constructive feedback and bring a strong collaborative attitude to the table.
                 </Typography>
             </Grid>
