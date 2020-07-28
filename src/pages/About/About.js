@@ -12,6 +12,10 @@ import CardMedia from '@material-ui/core/CardMedia'
 import Button from '@material-ui/core/Button'
 import Typography from '@material-ui/core/Typography'
 import Paper from '@material-ui/core/Paper'
+import GitHubIcon from '@material-ui/icons/GitHub'
+import LinkedInIcon from '@material-ui/icons/LinkedIn'
+import EmailIcon from '@material-ui/icons/Email'
+import { IconButton } from '@material-ui/core'
 import "animate.css/animate.min.css"
 import ScrollAnimation from 'react-animate-on-scroll'
 
@@ -59,6 +63,13 @@ const useStyles = makeStyles((theme) => ({
     },
     container: {
         maxWidth: "475px"
+    },
+    icon: {
+        color: "white"
+    },
+    iconBtn: {
+        color: 'white',
+        marginBottom: theme.spacing(5)
     }
 }))
 
@@ -83,8 +94,11 @@ const About = props => {
                 alignItems="center"
                 justifyContent="center"
                 className={classes.container}>
-                <Typography className={classes.text}>
-                    Front end web developer fascinated by innovation with a background in film and art. Dedicated to building user-friendly, responsive apps. A team-player with an eagerness to learn new technologies. Earned a certificate from UCI's 12-week intensive full stack web development coding boot camp. There I developed skills in React, JavaScript, and responsive web design, along with other essential web development technologies. 
+                <Typography className={classes.text} align="center">
+                    Southern California-based front end web developer fascinated by innovation with a background in film and art. A team-player with an eagerness to learn new technologies and dedicated to building user-friendly, responsive apps.  Earned a certificate from UCI's 12-week intensive full stack web development coding boot camp. There I developed skills in React, JavaScript, responsive web design, along with other essential web development technologies. 
+                </Typography>
+                        <Typography className={classes.text} align="center">
+                    With nearly a decade's worth of experience at The Walt Disney Company and Apple, I thrive on constructive feedback and bring a strong collaborative attitude to the table.
                 </Typography>
             </Grid>
             </ScrollAnimation>
@@ -95,7 +109,7 @@ const About = props => {
             justify="center"
             alignItems="center"
             sm={12}>  
-            <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" delay="700">
+            <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" delay="200">
                 <Typography className={classes.title} variant="h2" xs={12} sm={12}>
                     Projects
                 </Typography>
@@ -125,6 +139,45 @@ const About = props => {
                     GitHub="https://github.com/TuffLuffJimmy/CoZone"
                     App="https://tuffluffjimmy.github.io/CoZone/"/>
             </ScrollAnimation>
+        </Grid>
+        <Grid
+            container
+            direction="column"
+            justify="center"
+            alignItems="center"
+            sm={12}>
+            <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
+                <Typography className={classes.title} variant="h2">
+                    Contact
+                </Typography>
+            </ScrollAnimation>
+                <Typography className={[classes.text, classes.container].join(' ')} align="center">
+                    Available for full time, part time, and freelance opportunities. Email is preferred method of contact. 
+            </Typography>
+        </Grid>
+        <Grid
+            container
+            direction="row"
+            justify="center"
+            alignItems="center"
+            sm={12}>
+            <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
+                <Typography className={classes.title} variant="h5">
+                    tironamichael@gmail.com  |  (714) 213-2001
+                </Typography>
+            </ScrollAnimation>
+        </Grid>
+        <Grid
+            container
+            direction="row"
+            justify="center"
+            alignItems="center">
+            <IconButton href="https://github.com/tironam" className={classes.iconBtn} target="_blank">
+                <GitHubIcon fontSize="large" />
+            </IconButton>
+            <IconButton href="https://www.linkedin.com/in/michael-tirona-9990a7101/" className={classes.iconBtn} target="_blank">
+                <LinkedInIcon fontSize="large" />
+            </IconButton>
         </Grid>
         <Footer />
     </>
