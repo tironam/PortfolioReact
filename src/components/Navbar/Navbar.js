@@ -34,8 +34,9 @@ const useStyles = makeStyles((theme) => ({
         background: "transparent",
         boxShadow: "none"
     },
-    iconBtn: {
-        color: 'white'
+    btn: {
+        color: 'white',
+        flexGrow: 1
     }
 }))
 
@@ -46,13 +47,13 @@ const Navbar = () => {
     return (
         <ThemeProvider theme={theme}>
             <AppBar position="static" className={classes.bar} color="secondary">
-                            <Toolbar>
-                                <Typography variant="h6" className={classes.title}>
-                                    Michael Tirona
-                                </Typography>
-                                
-                            </Toolbar>
-                        </AppBar>
+                <Button className={classes.btn}>
+                    Projects
+                </Button>
+                <Button className={classes.btn}>
+                    Contact
+                </Button>
+            </AppBar>
         </ThemeProvider>
     )
 }

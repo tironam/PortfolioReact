@@ -91,9 +91,13 @@ const About = props => {
             <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" delay="200">
             <Grid
                 container
+                direction="column"
                 alignItems="center"
                 justifyContent="center"
                 className={classes.container}>
+                <Typography className={classes.text} variant="h5" align="center">
+                    Hi, I'm Michael Tirona.
+                </Typography>
                 <Typography className={classes.text} align="center">
                     Southern California-based front end web developer fascinated by innovation with a background in film and art. A team-player with an eagerness to learn new technologies and dedicated to building user-friendly, responsive apps.  Earned a certificate from UCI's 12-week intensive full stack web development coding boot camp. There I developed skills in React, JavaScript, responsive web design, along with other essential web development technologies. 
                 </Typography>
@@ -147,7 +151,7 @@ const About = props => {
             alignItems="center"
             sm={12}>
             <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
-                <Typography className={classes.title} variant="h2">
+                <Typography className={classes.title} variant="h2" align="center">
                     Let's work together
                 </Typography>
             </ScrollAnimation>
