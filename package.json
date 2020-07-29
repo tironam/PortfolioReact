@@ -1,6 +1,7 @@
 {
   "name": "reactportfolio",
   "version": "0.1.0",
+  "homepage": "https://tironam.github.io/PortfolioReact",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.10.2",
