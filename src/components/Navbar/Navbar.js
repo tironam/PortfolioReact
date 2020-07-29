@@ -47,12 +47,14 @@ const Navbar = () => {
     return (
         <ThemeProvider theme={theme}>
             <AppBar position="static" className={classes.bar} color="secondary">
-                <Button className={classes.btn}>
-                    Projects
-                </Button>
-                <Button className={classes.btn}>
-                    Contact
-                </Button>
+                <Toolbar>
+                    <Button className={classes.btn} href="#projects">
+                        Projects
+                    </Button>
+                    <Button className={classes.btn} href="#contact">
+                        Contact
+                    </Button>
+                </Toolbar>
             </AppBar>
         </ThemeProvider>
     )

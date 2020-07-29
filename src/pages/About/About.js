@@ -102,7 +102,7 @@ const About = props => {
                     Southern California-based front end web developer fascinated by innovation with a background in film and art. A team-player with an eagerness to learn new technologies and dedicated to building user-friendly, responsive apps.  Earned a certificate from UCI's 12-week intensive full stack web development coding boot camp. There I developed skills in React, JavaScript, responsive web design, along with other essential web development technologies. 
                 </Typography>
                 <Typography className={classes.text} align="center">
-                    With nearly a decade's worth of experience at The Walt Disney Company and Apple, I thrive on constructive feedback and bring a strong collaborative attitude to the table.
+                    With nearly a decade's worth of customer service experience at The Walt Disney Company and Apple, I thrive on constructive feedback and am always willing to learn new things.
                 </Typography>
             </Grid>
             </ScrollAnimation>
@@ -114,7 +114,8 @@ const About = props => {
             alignItems="center"
             sm={12}>  
             <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" delay="200">
-                <Typography className={classes.title} variant="h2" xs={12} sm={12}>
+                <section id="projects"></section>
+                <Typography className={classes.title} variant="h2">
                     Projects
                 </Typography>
             </ScrollAnimation>
@@ -151,6 +152,7 @@ const About = props => {
             alignItems="center"
             sm={12}>
             <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
+                <section id="contact"></section>
                 <Typography className={classes.title} variant="h2" align="center">
                     Let's work together
                 </Typography>
