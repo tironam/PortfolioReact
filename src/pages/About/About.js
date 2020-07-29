@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { makeStyles, useTheme } from '@material-ui/core/styles'
 import Navbar from '../../components/Navbar'
-import Footer from '../../components/Footer'
 import ProjectCard from '../../components/ProjectCard'
 import './about.css'
 import Grid from '@material-ui/core/Grid'
@@ -12,6 +11,11 @@ import CardMedia from '@material-ui/core/CardMedia'
 import Button from '@material-ui/core/Button'
 import Typography from '@material-ui/core/Typography'
 import Paper from '@material-ui/core/Paper'
+import GitHubIcon from '@material-ui/icons/GitHub'
+import LinkedInIcon from '@material-ui/icons/LinkedIn'
+import EmailIcon from '@material-ui/icons/Email'
+import CopyrightIcon from '@material-ui/icons/Copyright'
+import { IconButton } from '@material-ui/core'
 import "animate.css/animate.min.css"
 import ScrollAnimation from 'react-animate-on-scroll'
 
@@ -59,6 +63,13 @@ const useStyles = makeStyles((theme) => ({
     },
     container: {
         maxWidth: "475px"
+    },
+    icon: {
+        color: "white"
+    },
+    iconBtn: {
+        color: 'white',
+        marginBottom: theme.spacing(5)
     }
 }))
 
@@ -80,11 +91,18 @@ const About = props => {
             <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" delay="200">
             <Grid
                 container
+                direction="column"
                 alignItems="center"
                 justifyContent="center"
                 className={classes.container}>
-                <Typography className={classes.text}>
-                    Front end web developer fascinated by innovation with a background in film and art. Dedicated to building user-friendly, responsive apps. A team-player with an eagerness to learn new technologies. Earned a certificate from UCI's 12-week intensive full stack web development coding boot camp. There I developed skills in React, JavaScript, and responsive web design, along with other essential web development technologies. 
+                <Typography className={classes.text} variant="h5" align="center">
+                    Hi, I'm Michael Tirona.
+                </Typography>
+                <Typography className={classes.text} align="center">
+                    Southern California-based front end web developer fascinated by innovation with a background in film and art. A team-player with an eagerness to learn new technologies and dedicated to building user-friendly, responsive apps.  Earned a certificate from UCI's 12-week intensive full stack web development coding boot camp. There I developed skills in React, JavaScript, responsive web design, along with other essential web development technologies. 
+                </Typography>
+                <Typography className={classes.text} align="center">
+                    With nearly a decade's worth of customer service experience at The Walt Disney Company and Apple, I thrive on constructive feedback and am always willing to learn new things.
                 </Typography>
             </Grid>
             </ScrollAnimation>
@@ -95,8 +113,9 @@ const About = props => {
             justify="center"
             alignItems="center"
             sm={12}>  
-            <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" delay="700">
-                <Typography className={classes.title} variant="h2" xs={12} sm={12}>
+            <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" delay="200">
+                <section id="projects"></section>
+                <Typography className={classes.title} variant="h2">
                     Projects
                 </Typography>
             </ScrollAnimation>
@@ -126,7 +145,53 @@ const About = props => {
                     App="https://tuffluffjimmy.github.io/CoZone/"/>
             </ScrollAnimation>
         </Grid>
-        <Footer />
+        <Grid
+            container
+            direction="column"
+            justify="center"
+            alignItems="center"
+            sm={12}>
+            <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
+                <section id="contact"></section>
+                <Typography className={classes.title} variant="h2" align="center">
+                    Let's work together
+                </Typography>
+            </ScrollAnimation>
+        </Grid>
+        <Grid
+            container
+            direction="row"
+            justify="center"
+            alignItems="center"
+            sm={12}>
+            <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
+                <Typography className={classes.title} variant="h5" component="a" href="mailto:tironamichael@gmail.com">
+                    tironamichael@gmail.com
+                </Typography>
+            </ScrollAnimation>
+        </Grid>
+        <Grid
+            container
+            direction="row"
+            justify="center"
+            alignItems="center">
+            <IconButton href="https://github.com/tironam" className={classes.iconBtn} target="_blank">
+                <GitHubIcon fontSize="large" />
+            </IconButton>
+            <IconButton href="https://www.linkedin.com/in/michael-tirona-9990a7101/" className={classes.iconBtn} target="_blank">
+                <LinkedInIcon fontSize="large" />
+            </IconButton>
+        </Grid>
+        <Grid
+            container
+            direction="row"
+            justify="center"
+            alignItems="center">
+                <CopyrightIcon className={classes.icon} />
+                <Typography className={classes.text}>
+                    Michael Tirona. All Right Reserved.
+                </Typography>
+        </Grid>
     </>
     )
 }

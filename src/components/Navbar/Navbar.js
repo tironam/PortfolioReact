@@ -30,10 +30,13 @@ const useStyles = makeStyles((theme) => ({
         color: 'inherit'
     },
     bar: {
-        marginBottom: 20
+        marginBottom: 20,
+        background: "transparent",
+        boxShadow: "none"
     },
-    iconBtn: {
-        color: 'white'
+    btn: {
+        color: 'white',
+        flexGrow: 1
     }
 }))
 
@@ -44,18 +47,15 @@ const Navbar = () => {
     return (
         <ThemeProvider theme={theme}>
             <AppBar position="static" className={classes.bar} color="secondary">
-                            <Toolbar>
-                                <Typography variant="h6" className={classes.title}>
-                                    Michael Tirona
-                                </Typography>
-                                <IconButton href="https://github.com/tironam" className={classes.iconBtn} target="_blank">
-                                    <GitHubIcon  />
-                                </IconButton>
-                                <IconButton href="https://www.linkedin.com/in/michael-tirona-9990a7101/" className={classes.iconBtn} target="_blank">
-                                    <LinkedInIcon />
-                                </IconButton>
-                            </Toolbar>
-                        </AppBar>
+                <Toolbar>
+                    <Button className={classes.btn} href="#projects">
+                        Projects
+                    </Button>
+                    <Button className={classes.btn} href="#contact">
+                        Contact
+                    </Button>
+                </Toolbar>
+            </AppBar>
         </ThemeProvider>
     )
 }

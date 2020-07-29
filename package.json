@@ -11,8 +11,10 @@
     "@testing-library/user-event": "^7.2.1",
     "animate.css": "^4.1.0",
     "react": "^16.13.1",
+    "react-anchor-link-smooth-scroll": "^1.0.12",
     "react-animate-on-scroll": "^2.1.5",
     "react-dom": "^16.13.1",
+    "react-mailto": "^0.4.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1"
   },
