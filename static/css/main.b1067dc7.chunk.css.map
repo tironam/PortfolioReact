@@ -1,0 +1,1 @@
+{"version":3,"sources":["about.css"],"names":[],"mappings":"AAAI,KACI,8CAAgE,CAChE,QACJ","file":"main.b1067dc7.chunk.css","sourcesContent":["    body {\n        background: linear-gradient(to bottom, #ff6666 0%, #ffcccc 100%);\n        margin: 0;\n    }"]}
