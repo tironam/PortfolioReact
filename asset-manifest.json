@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/PortfolioReact/static/css/main.b1067dc7.chunk.css",
-    "main.js": "/PortfolioReact/static/js/main.cef21d42.chunk.js",
-    "main.js.map": "/PortfolioReact/static/js/main.cef21d42.chunk.js.map",
-    "runtime-main.js": "/PortfolioReact/static/js/runtime-main.af3fa355.js",
-    "runtime-main.js.map": "/PortfolioReact/static/js/runtime-main.af3fa355.js.map",
-    "static/css/2.f01c5455.chunk.css": "/PortfolioReact/static/css/2.f01c5455.chunk.css",
-    "static/js/2.e85692d6.chunk.js": "/PortfolioReact/static/js/2.e85692d6.chunk.js",
-    "static/js/2.e85692d6.chunk.js.map": "/PortfolioReact/static/js/2.e85692d6.chunk.js.map",
-    "index.html": "/PortfolioReact/index.html",
-    "precache-manifest.6e356baeb98229c0859b286732fb1970.js": "/PortfolioReact/precache-manifest.6e356baeb98229c0859b286732fb1970.js",
-    "service-worker.js": "/PortfolioReact/service-worker.js",
-    "static/css/2.f01c5455.chunk.css.map": "/PortfolioReact/static/css/2.f01c5455.chunk.css.map",
-    "static/css/main.b1067dc7.chunk.css.map": "/PortfolioReact/static/css/main.b1067dc7.chunk.css.map",
-    "static/js/2.e85692d6.chunk.js.LICENSE.txt": "/PortfolioReact/static/js/2.e85692d6.chunk.js.LICENSE.txt"
+    "main.css": "/tironam.com/static/css/main.b1067dc7.chunk.css",
+    "main.js": "/tironam.com/static/js/main.fb56bb9e.chunk.js",
+    "main.js.map": "/tironam.com/static/js/main.fb56bb9e.chunk.js.map",
+    "runtime-main.js": "/tironam.com/static/js/runtime-main.68c0373a.js",
+    "runtime-main.js.map": "/tironam.com/static/js/runtime-main.68c0373a.js.map",
+    "static/css/2.f01c5455.chunk.css": "/tironam.com/static/css/2.f01c5455.chunk.css",
+    "static/js/2.e85692d6.chunk.js": "/tironam.com/static/js/2.e85692d6.chunk.js",
+    "static/js/2.e85692d6.chunk.js.map": "/tironam.com/static/js/2.e85692d6.chunk.js.map",
+    "index.html": "/tironam.com/index.html",
+    "precache-manifest.cf0a0f4deb078dc9dc3c67925f764fcc.js": "/tironam.com/precache-manifest.cf0a0f4deb078dc9dc3c67925f764fcc.js",
+    "service-worker.js": "/tironam.com/service-worker.js",
+    "static/css/2.f01c5455.chunk.css.map": "/tironam.com/static/css/2.f01c5455.chunk.css.map",
+    "static/css/main.b1067dc7.chunk.css.map": "/tironam.com/static/css/main.b1067dc7.chunk.css.map",
+    "static/js/2.e85692d6.chunk.js.LICENSE.txt": "/tironam.com/static/js/2.e85692d6.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.af3fa355.js",
+    "static/js/runtime-main.68c0373a.js",
     "static/css/2.f01c5455.chunk.css",
     "static/js/2.e85692d6.chunk.js",
     "static/css/main.b1067dc7.chunk.css",
-    "static/js/main.cef21d42.chunk.js"
+    "static/js/main.fb56bb9e.chunk.js"
   ]
 }
