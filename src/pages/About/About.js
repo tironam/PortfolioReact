@@ -3,6 +3,7 @@ import { makeStyles, useTheme } from '@material-ui/core/styles'
 import Navbar from '../../components/Navbar'
 import ProjectCard from '../../components/ProjectCard'
 import './about.css'
+import picture from './profile.jpg'
 import Grid from '@material-ui/core/Grid'
 import Card from '@material-ui/core/Card'
 import CardActions from '@material-ui/core/CardActions'
@@ -87,7 +88,7 @@ const About = props => {
             justify="center"
             alignItems="center"
             sm={12}>
-            <img className={classes.img} src={'https://scontent-lax3-2.xx.fbcdn.net/v/t1.0-9/17884179_10156012067398154_8836003987201545848_n.jpg?_nc_cat=107&_nc_sid=174925&_nc_oc=AQlVAdZpNYB7YTRWIZoi7D5CyftdvvqOmYoGr3RSTnnMVlQ7C5jdUfHf3JUmr4oDLYE&_nc_ht=scontent-lax3-2.xx&oh=586160818275b1ba26f6b707ee820dde&oe=5F1BE04B'} />
+            <img className={classes.img} src={picture} />
             <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" delay="200">
             <Grid
                 container
