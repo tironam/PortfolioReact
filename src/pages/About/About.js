@@ -190,7 +190,7 @@ const About = props => {
             alignItems="center">
                 <CopyrightIcon className={classes.icon} />
                 <Typography className={classes.text}>
-                    Michael Tirona. All Right Reserved.
+                    Michael Tirona. All Rights Reserved.
                 </Typography>
         </Grid>
     </>
