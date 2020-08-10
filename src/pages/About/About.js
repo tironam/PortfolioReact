@@ -19,6 +19,7 @@ import CopyrightIcon from '@material-ui/icons/Copyright'
 import { IconButton } from '@material-ui/core'
 import "animate.css/animate.min.css"
 import ScrollAnimation from 'react-animate-on-scroll'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -106,6 +107,24 @@ const About = props => {
                     With nearly a decade's worth of customer service experience at The Walt Disney Company and Apple, I thrive on constructive feedback and am always willing to learn new things.
                 </Typography>
             </Grid>
+            </ScrollAnimation>
+        </Grid>
+        <Grid
+            container
+            direction="column"
+            justify="center"
+            alignItems="center"
+            sm={12}>
+            <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" delay="200">
+                <section id="projects"></section>
+                <Typography className={classes.title} variant="h2">
+                    Technologies
+                 </Typography>
+            </ScrollAnimation>
+            <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" delay="200">
+                <Typography variant="h5" className={classes.text}>
+                    HTML | CSS | JavaScript | React | 
+                </Typography>
             </ScrollAnimation>
         </Grid>
         <Grid
