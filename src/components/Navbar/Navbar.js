@@ -51,6 +51,9 @@ const Navbar = () => {
                     <Button className={classes.btn} href="#projects">
                         Projects
                     </Button>
+                    <Button className={classes.btn} href="#technology">
+                        Technology
+                    </Button>
                     <Button className={classes.btn} href="#contact">
                         Contact
                     </Button>

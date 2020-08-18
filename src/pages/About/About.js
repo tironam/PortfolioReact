@@ -128,7 +128,7 @@ const About = props => {
             <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" delay="200">
                 <section id="technology"></section>
                 <Typography className={classes.title} variant="h3">
-                    Technologies
+                    Technology
                  </Typography>
             </ScrollAnimation>
             <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" delay="200">
