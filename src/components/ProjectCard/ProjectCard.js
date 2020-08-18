@@ -51,6 +51,12 @@ const ProjectCard = props => {
                     {props.role}
                 </Typography>
                 <Typography variant="h6" className={classes.text}>
+                    Technologies used:
+                </Typography>
+                <Typography className={classes.text}>
+                    {props.tech}
+                </Typography>
+                <Typography variant="h6" className={classes.text}>
                     Repository and Deployed App:
                 </Typography>
                 <IconButton href={props.GitHub} className={classes.iconBtn} target="_blank">
