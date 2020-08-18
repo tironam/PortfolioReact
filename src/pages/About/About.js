@@ -142,6 +142,7 @@ const About = props => {
                     <i className="devicon-bootstrap-plain-wordmark">  </i>
                     <i className="devicon-nodejs-plain-wordmark">  </i>
                     <i class="devicon-express-original">  </i>
+                    <i class="devicon-npm-original-wordmark">  </i>
                     <i className="devicon-github-plain-wordmark">  </i>
                     <i className="devicon-heroku-plain-wordmark"> </i>
                 </Typography>
@@ -167,6 +168,7 @@ const About = props => {
                     name="Dewey"
                     description="Full stack library app to search for and save books a user owns. Built using PassPortJS, MongoDB, Mongoose, React, Material-UI, Reactstrap, and the OpenLibrary Search API."
                     role="I built the authentication with PassportJS, constructed the Sign Up and Login pages, and helped unify UI elements across the app"
+                    tech="React | Material-UI | Reactstrap | MongoDB | Mongoose | NodeJS | Express | NPM | PassportJS | OpenLibraryAPI"
                     GitHub="https://github.com/usrs/Dewey"
                     App="http://dewey.works"
                     sm={12}/>
@@ -176,6 +178,7 @@ const About = props => {
                     name="Listivity"
                     description="Full stack app that tracks all the activities a user said they wanted to do. Organizes activities by category and allows you to pick an activity at random. Utilizes MySQL, Sequelize, and Bootstrap."
                     role="The project was built together by the team in a collaborative setting. Each member of the team took turns coding while sharing their screen and everyone watching assisted"
+                    tech="HTML | CSS | JavaScript | Bootstrap | MySQL | Sequelize | NodeJS | Express | NPM"
                     GitHub="https://github.com/ShaneMit/Project2"
                     App="https://radiant-woodland-54871.herokuapp.com/login.html"/>
             </ScrollAnimation>
@@ -184,6 +187,7 @@ const About = props => {
                     name="CoZone"
                     description="A front end Covid-19 tracking app that allows the user to search case data by country. Utilizes Google’s Maps JavaScript and Places APIs and the covid19 API."
                     role="I integrated both Google APIs, including integrating the search form so it accessed both the covid19 API and the Places API"
+                    tech="HTML | CSS | JavaScript | Materialize | Google Maps JavaScript API | Google Places API | covid19 API"
                     GitHub="https://github.com/TuffLuffJimmy/CoZone"
                     App="https://tuffluffjimmy.github.io/CoZone/"/>
             </ScrollAnimation>
