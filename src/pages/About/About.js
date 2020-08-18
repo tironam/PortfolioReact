@@ -77,7 +77,6 @@ const useStyles = makeStyles((theme) => ({
     },
     tech: {
         color: "white",
-        margin: theme.spacing(3),
         textAlign: "center"
     },
     contact: {
@@ -132,23 +131,31 @@ const About = props => {
                  </Typography>
             </ScrollAnimation>
             <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" delay="200">
-                <Typography variant="h3" className={classes.tech}>
-                    <i className="devicon-html5-plain-wordmark">  </i>
-                    <i className="devicon-css3-plain-wordmark">  </i>
-                    <i className="devicon-javascript-plain">  </i>
-                    <i className="devicon-react-original-wordmark">  </i>
-                    <i className="devicon-mysql-plain-wordmark">  </i>
-                    <i className="devicon-mongodb-plain-wordmark">  </i>
-                    <i className="devicon-bootstrap-plain-wordmark">  </i>
-                    <i className="devicon-nodejs-plain-wordmark">  </i>
-                    <i class="devicon-express-original">  </i>
-                    <i class="devicon-npm-original-wordmark">  </i>
-                    <i className="devicon-github-plain-wordmark">  </i>
-                    <i className="devicon-heroku-plain-wordmark"> </i>
-                </Typography>
-                <Typography className={classes.text}>
-                    Materialize | Material-UI | Reactstrap | Sequelize | Mongoose | PassportJS
-                </Typography>
+                <Grid
+                    container
+                    direction="column"
+                    justify="center"
+                    alignItems="center"
+                    sm={12}
+                    className={classes.container}>
+                    <Typography variant="h3" className={classes.tech}>
+                        <i className="devicon-html5-plain-wordmark">  </i>
+                        <i className="devicon-css3-plain-wordmark">  </i>
+                        <i className="devicon-javascript-plain">  </i>
+                        <i className="devicon-react-original-wordmark">  </i>
+                        <i className="devicon-mysql-plain-wordmark">  </i>
+                        <i className="devicon-mongodb-plain-wordmark">  </i>
+                        <i className="devicon-bootstrap-plain-wordmark">  </i>
+                        <i className="devicon-nodejs-plain-wordmark">  </i>
+                        <i class="devicon-express-original">  </i>
+                        <i class="devicon-npm-original-wordmark">  </i>
+                        <i className="devicon-github-plain-wordmark">  </i>
+                        <i className="devicon-heroku-plain-wordmark"> </i>
+                    </Typography>
+                    <Typography className={classes.text}>
+                        Materialize | Material-UI | Reactstrap | Sequelize | Mongoose | PassportJS
+                    </Typography>
+                </Grid>
             </ScrollAnimation>
         </Grid>
         <Grid
