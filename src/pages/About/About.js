@@ -3,6 +3,7 @@ import { makeStyles, useTheme } from '@material-ui/core/styles'
 import Navbar from '../../components/Navbar'
 import ProjectCard from '../../components/ProjectCard'
 import './about.css'
+import picture from './profile.jpg'
 import Grid from '@material-ui/core/Grid'
 import Card from '@material-ui/core/Card'
 import CardActions from '@material-ui/core/CardActions'
@@ -18,6 +19,8 @@ import CopyrightIcon from '@material-ui/icons/Copyright'
 import { IconButton } from '@material-ui/core'
 import "animate.css/animate.min.css"
 import ScrollAnimation from 'react-animate-on-scroll'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { html5 } from '@fortawesome/free-solid-svg-icons'
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -53,7 +56,8 @@ const useStyles = makeStyles((theme) => ({
     },
     text: {
         margin: theme.spacing(2),
-        color: "white"
+        color: "white",
+        textAlign: "center"
     },
     title: {
         margin: theme.spacing(5),
@@ -70,6 +74,16 @@ const useStyles = makeStyles((theme) => ({
     iconBtn: {
         color: 'white',
         marginBottom: theme.spacing(5)
+    },
+    tech: {
+        color: "white",
+        maxWidth: "475px",
+        alignItems: "center",
+        justifyContent: "center",
+        textAlign: "center"
+    },
+    contact: {
+        marginBottom: theme.spacing(7)
     }
 }))
 
@@ -87,7 +101,7 @@ const About = props => {
             justify="center"
             alignItems="center"
             sm={12}>
-            <img className={classes.img} src={'https://scontent-lax3-2.xx.fbcdn.net/v/t1.0-9/17884179_10156012067398154_8836003987201545848_n.jpg?_nc_cat=107&_nc_sid=174925&_nc_oc=AQlVAdZpNYB7YTRWIZoi7D5CyftdvvqOmYoGr3RSTnnMVlQ7C5jdUfHf3JUmr4oDLYE&_nc_ht=scontent-lax3-2.xx&oh=586160818275b1ba26f6b707ee820dde&oe=5F1BE04B'} />
+            <img className={classes.img} src={picture} />
             <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" delay="200">
             <Grid
                 container
@@ -102,9 +116,52 @@ const About = props => {
                     Southern California-based front end web developer fascinated by innovation with a background in film and art. A team-player with an eagerness to learn new technologies and dedicated to building user-friendly, responsive apps.  Earned a certificate from UCI's 12-week intensive full stack web development coding boot camp. There I developed skills in React, JavaScript, responsive web design, along with other essential web development technologies. 
                 </Typography>
                 <Typography className={classes.text} align="center">
-                    With nearly a decade's worth of customer service experience at The Walt Disney Company and Apple, I thrive on constructive feedback and am always willing to learn new things.
+                    With nearly a decade's worth of customer service experience at The Walt Disney Company and Apple, I thrive on constructive feedback, communication, and am always willing to learn new things.
                 </Typography>
             </Grid>
+            </ScrollAnimation>
+        </Grid>
+        <Grid
+            container
+            direction="column"
+            justify="center"
+            alignItems="center"
+            sm={12}>
+            <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" delay="200">
+                <section id="technology"></section>
+                <Typography className={classes.title} variant="h3">
+                    Technology
+                 </Typography>
+            </ScrollAnimation>
+            <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" delay="200">
+                <Grid
+                    container
+                    direction="column"
+                    justify="center"
+                    alignItems="center"
+                    sm={12}>
+                    <Typography variant="h2" className={classes.tech}>
+                        <i className="devicon-html5-plain-wordmark">  </i>
+                        <i className="devicon-css3-plain-wordmark">  </i>
+                        <i className="devicon-javascript-plain">  </i>
+                        <i className="devicon-react-original-wordmark">  </i>
+                    </Typography>
+                    <Typography variant="h2" className={classes.tech}>
+                        <i className="devicon-mysql-plain-wordmark">  </i>
+                        <i className="devicon-mongodb-plain-wordmark">  </i>
+                        <i className="devicon-bootstrap-plain-wordmark">  </i>
+                        <i className="devicon-nodejs-plain-wordmark">  </i>
+                    </Typography>
+                    <Typography variant="h2" className={classes.tech}>
+                        <i className="devicon-express-original-wordmark">  </i>
+                        <i className="devicon-npm-original-wordmark">  </i>
+                        <i className="devicon-github-plain-wordmark">  </i>
+                        <i className="devicon-heroku-plain-wordmark"> </i>
+                    </Typography>
+                    <Typography variant="h6" className={classes.tech}>
+                        Materialize | Material-UI | Reactstrap | Sequelize | Mongoose | PassportJS
+                    </Typography>
+                </Grid>
             </ScrollAnimation>
         </Grid>
         <Grid
@@ -124,6 +181,7 @@ const About = props => {
                     name="Dewey"
                     description="Full stack library app to search for and save books a user owns. Built using PassPortJS, MongoDB, Mongoose, React, Material-UI, Reactstrap, and the OpenLibrary Search API."
                     role="I built the authentication with PassportJS, constructed the Sign Up and Login pages, and helped unify UI elements across the app"
+                    tech="React | Material-UI | Reactstrap | MongoDB | Mongoose | NodeJS | Express | NPM | PassportJS | OpenLibraryAPI"
                     GitHub="https://github.com/usrs/Dewey"
                     App="http://dewey.works"
                     sm={12}/>
@@ -133,6 +191,7 @@ const About = props => {
                     name="Listivity"
                     description="Full stack app that tracks all the activities a user said they wanted to do. Organizes activities by category and allows you to pick an activity at random. Utilizes MySQL, Sequelize, and Bootstrap."
                     role="The project was built together by the team in a collaborative setting. Each member of the team took turns coding while sharing their screen and everyone watching assisted"
+                    tech="HTML | CSS | JavaScript | Bootstrap | MySQL | Sequelize | NodeJS | Express | NPM"
                     GitHub="https://github.com/ShaneMit/Project2"
                     App="https://radiant-woodland-54871.herokuapp.com/login.html"/>
             </ScrollAnimation>
@@ -141,6 +200,7 @@ const About = props => {
                     name="CoZone"
                     description="A front end Covid-19 tracking app that allows the user to search case data by country. Utilizes Google’s Maps JavaScript and Places APIs and the covid19 API."
                     role="I integrated both Google APIs, including integrating the search form so it accessed both the covid19 API and the Places API"
+                    tech="HTML | CSS | JavaScript | Materialize | Google Maps JavaScript API | Google Places API | covid19 API"
                     GitHub="https://github.com/TuffLuffJimmy/CoZone"
                     App="https://tuffluffjimmy.github.io/CoZone/"/>
             </ScrollAnimation>
@@ -174,13 +234,17 @@ const About = props => {
             container
             direction="row"
             justify="center"
-            alignItems="center">
+            alignItems="center"
+            className={classes.contact}>
             <IconButton href="https://github.com/tironam" className={classes.iconBtn} target="_blank">
                 <GitHubIcon fontSize="large" />
             </IconButton>
             <IconButton href="https://www.linkedin.com/in/michael-tirona-9990a7101/" className={classes.iconBtn} target="_blank">
                 <LinkedInIcon fontSize="large" />
             </IconButton>
+            <Button href="https://www.upwork.com/freelancers/~015d0ebc71e45c1972" className={classes.iconBtn}>
+                Upwork
+            </Button>
         </Grid>
         <Grid
             container
@@ -189,7 +253,7 @@ const About = props => {
             alignItems="center">
                 <CopyrightIcon className={classes.icon} />
                 <Typography className={classes.text}>
-                    Michael Tirona. All Right Reserved.
+                    Michael Tirona. All Rights Reserved.
                 </Typography>
         </Grid>
     </>

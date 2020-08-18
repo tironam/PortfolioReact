@@ -48,6 +48,9 @@ const Navbar = () => {
         <ThemeProvider theme={theme}>
             <AppBar position="static" className={classes.bar} color="secondary">
                 <Toolbar>
+                    <Button className={classes.btn} href="#technology">
+                        Technology
+                    </Button>
                     <Button className={classes.btn} href="#projects">
                         Projects
                     </Button>
