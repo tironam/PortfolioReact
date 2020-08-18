@@ -77,6 +77,9 @@ const useStyles = makeStyles((theme) => ({
     },
     tech: {
         color: "white",
+        maxWidth: "475px",
+        alignItems: "center",
+        justifyContent: "center",
         textAlign: "center"
     },
     contact: {
@@ -136,23 +139,26 @@ const About = props => {
                     direction="column"
                     justify="center"
                     alignItems="center"
-                    sm={12}
-                    className={classes.container}>
+                    sm={12}>
                     <Typography variant="h2" className={classes.tech}>
                         <i className="devicon-html5-plain-wordmark">  </i>
                         <i className="devicon-css3-plain-wordmark">  </i>
                         <i className="devicon-javascript-plain">  </i>
                         <i className="devicon-react-original-wordmark">  </i>
+                    </Typography>
+                    <Typography variant="h2" className={classes.tech}>
                         <i className="devicon-mysql-plain-wordmark">  </i>
                         <i className="devicon-mongodb-plain-wordmark">  </i>
                         <i className="devicon-bootstrap-plain-wordmark">  </i>
                         <i className="devicon-nodejs-plain-wordmark">  </i>
-                        <i class="devicon-express-original-wordmark">  </i>
-                        <i class="devicon-npm-original-wordmark">  </i>
+                    </Typography>
+                    <Typography variant="h2" className={classes.tech}>
+                        <i className="devicon-express-original-wordmark">  </i>
+                        <i className="devicon-npm-original-wordmark">  </i>
                         <i className="devicon-github-plain-wordmark">  </i>
                         <i className="devicon-heroku-plain-wordmark"> </i>
                     </Typography>
-                    <Typography variant="h6" className={classes.text}>
+                    <Typography variant="h6" className={classes.tech}>
                         Materialize | Material-UI | Reactstrap | Sequelize | Mongoose | PassportJS
                     </Typography>
                 </Grid>
