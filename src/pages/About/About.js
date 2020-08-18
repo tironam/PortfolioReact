@@ -20,6 +20,7 @@ import { IconButton } from '@material-ui/core'
 import "animate.css/animate.min.css"
 import ScrollAnimation from 'react-animate-on-scroll'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { html5 } from '@fortawesome/free-solid-svg-icons'
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -55,7 +56,8 @@ const useStyles = makeStyles((theme) => ({
     },
     text: {
         margin: theme.spacing(2),
-        color: "white"
+        color: "white",
+        textAlign: "center"
     },
     title: {
         margin: theme.spacing(5),
@@ -72,6 +74,14 @@ const useStyles = makeStyles((theme) => ({
     iconBtn: {
         color: 'white',
         marginBottom: theme.spacing(5)
+    },
+    tech: {
+        color: "white",
+        margin: theme.spacing(3),
+        textAlign: "center"
+    },
+    contact: {
+        marginBottom: theme.spacing(7)
     }
 }))
 
@@ -116,14 +126,27 @@ const About = props => {
             alignItems="center"
             sm={12}>
             <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" delay="200">
-                <section id="projects"></section>
-                <Typography className={classes.title} variant="h2">
+                <section id="technology"></section>
+                <Typography className={classes.title} variant="h3">
                     Technologies
                  </Typography>
             </ScrollAnimation>
             <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" delay="200">
-                <Typography variant="h5" className={classes.text}>
-                    HTML | CSS | JavaScript | React | 
+                <Typography variant="h3" className={classes.tech}>
+                    <i className="devicon-html5-plain-wordmark">  </i>
+                    <i className="devicon-css3-plain-wordmark">  </i>
+                    <i className="devicon-javascript-plain">  </i>
+                    <i className="devicon-react-original-wordmark">  </i>
+                    <i className="devicon-mysql-plain-wordmark">  </i>
+                    <i className="devicon-mongodb-plain-wordmark">  </i>
+                    <i className="devicon-bootstrap-plain-wordmark">  </i>
+                    <i className="devicon-nodejs-plain-wordmark">  </i>
+                    <i class="devicon-express-original">  </i>
+                    <i className="devicon-github-plain-wordmark">  </i>
+                    <i className="devicon-heroku-plain-wordmark"> </i>
+                </Typography>
+                <Typography className={classes.text}>
+                    Materialize | Material-UI | Reactstrap | Sequelize | Mongoose | PassportJS
                 </Typography>
             </ScrollAnimation>
         </Grid>
@@ -194,13 +217,17 @@ const About = props => {
             container
             direction="row"
             justify="center"
-            alignItems="center">
+            alignItems="center"
+            className={classes.contact}>
             <IconButton href="https://github.com/tironam" className={classes.iconBtn} target="_blank">
                 <GitHubIcon fontSize="large" />
             </IconButton>
             <IconButton href="https://www.linkedin.com/in/michael-tirona-9990a7101/" className={classes.iconBtn} target="_blank">
                 <LinkedInIcon fontSize="large" />
             </IconButton>
+            <Button href="https://www.upwork.com/freelancers/~015d0ebc71e45c1972" className={classes.iconBtn}>
+                Upwork
+            </Button>
         </Grid>
         <Grid
             container
