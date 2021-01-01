@@ -176,6 +176,16 @@ const About = props => {
                     Projects
                 </Typography>
             </ScrollAnimation>
+                <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
+                    <ProjectCard
+                        name="Gift Listr"
+                        description="Simple full stack gift wishlist app. Pulls list of gifts from a database and allows you to post gifts to the database. App was designed both as a personal tool to use during the 2020 holiday season and to practice working with the front and back end. Future updates are planned to improve the usability of the app."
+                        role="Built every aspect of the app myself"
+                        tech="HTML | CSS | JavaScript | Express | NodeJS | MySQL | Axios | .ENV | Bootstrap | Heroku | JawsDB"
+                        GitHub="https://github.com/tironam/christmaslistr"
+                        App="https://tranquil-journey-72389.herokuapp.com/"
+                        sm={12} />
+                </ScrollAnimation>
             <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
                 <ProjectCard
                     name="Dewey"
