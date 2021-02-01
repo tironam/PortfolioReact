@@ -203,7 +203,7 @@ const About = props => {
                     role="The project was built together by the team in a collaborative setting. Each member of the team took turns coding while sharing their screen and everyone watching assisted"
                     tech="HTML | CSS | JavaScript | Bootstrap | MySQL | Sequelize | NodeJS | Express | NPM | Animate.CSS"
                     GitHub="https://github.com/ShaneMit/Project2"
-                    App="https://radiant-woodland-54871.herokuapp.com/login.html"/>
+                    App="https://listivity.herokuapp.com/"/>
             </ScrollAnimation>
             <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
                 <ProjectCard 
