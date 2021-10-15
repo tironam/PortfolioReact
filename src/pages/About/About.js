@@ -113,7 +113,7 @@ const About = props => {
                     Hi, I'm Michael Tirona.
                 </Typography>
                 <Typography className={classes.text} align="center">
-                    Southern California-based front end web developer fascinated by innovation with a background in film and art. A team-player with an eagerness to learn new technologies and dedicated to building user-friendly, responsive apps.  Earned a certificate from UCI's 12-week intensive full stack web development coding boot camp. There I developed skills in React, JavaScript, responsive web design, along with other essential web development technologies. 
+                    Southern California-based front end web developer fascinated by innovation with a background in film and art. A team-player with an eagerness to learn new technologies and dedicated to building user-friendly, responsive apps. Earned a certificate from UCI's 12-week intensive full stack web development coding boot camp. There I developed skills in React, JavaScript, responsive web design, along with other essential web development technologies. 
                 </Typography>
                 <Typography className={classes.text} align="center">
                     With nearly a decade's worth of customer service experience at The Walt Disney Company and Apple, I thrive on constructive feedback, communication, and am always willing to learn new things.
@@ -178,6 +178,14 @@ const About = props => {
             </ScrollAnimation>
                 <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
                     <ProjectCard
+                        name="MCU and You"
+                        description="A multi-page React site, designed as an informational resource for all things related to the Marvel Cinematic Universe. Sections of the site are organized by components into separate pages. Since many of the pages are content-heavy, they have buttons that will quickly take you to other sections of the page."
+                        role="Project was built entirely by me."
+                        tech="HTML | CSS | React.JS | Reactstrap | Fontawesome | React-scroll-up | React-router-hash-link | Deployed on Netlify"
+                        GitHub="https://github.com/tironam/MarvelResource"
+                        App="https://mcuandyou.com/"
+                        sm={12} />
+                    <ProjectCard
                         name="Gift Listr"
                         description="Simple full stack gift wishlist app. Pulls list of gifts from a database and allows you to post gifts to the database. App was designed both as a personal tool to use during the 2020 holiday season and to practice working with the front and back end. Future updates are planned to improve the usability of the app."
                         role="Built every aspect of the app myself"
@@ -203,7 +211,7 @@ const About = props => {
                     role="The project was built together by the team in a collaborative setting. Each member of the team took turns coding while sharing their screen and everyone watching assisted"
                     tech="HTML | CSS | JavaScript | Bootstrap | MySQL | Sequelize | NodeJS | Express | NPM | Animate.CSS"
                     GitHub="https://github.com/ShaneMit/Project2"
-                    App="https://radiant-woodland-54871.herokuapp.com/login.html"/>
+                    App="https://listivity.herokuapp.com/"/>
             </ScrollAnimation>
             <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
                 <ProjectCard 
