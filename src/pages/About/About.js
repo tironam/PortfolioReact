@@ -180,7 +180,7 @@ const About = props => {
                     <ProjectCard
                         name="MCU and You"
                         description="A multi-page React site, designed as an informational resource for all things related to the Marvel Cinematic Universe. Sections of the site are organized by components into separate pages. Since many of the pages are content-heavy, they have buttons that will quickly take you to other sections of the page."
-                        role="Project was built entirely by me."
+                        role="Built by myself using the technologies mentioned below"
                         tech="HTML | CSS | React.JS | Reactstrap | Fontawesome | React-scroll-up | React-router-hash-link | Deployed on Netlify"
                         GitHub="https://github.com/tironam/MarvelResource"
                         App="https://mcuandyou.com/"
@@ -188,7 +188,7 @@ const About = props => {
                     <ProjectCard
                         name="Gift Listr"
                         description="Simple full stack gift wishlist app. Pulls list of gifts from a database and allows you to post gifts to the database. App was designed both as a personal tool to use during the 2020 holiday season and to practice working with the front and back end. Future updates are planned to improve the usability of the app."
-                        role="Built every aspect of the app myself"
+                        role="Built by myself using the technologies mentioned below"
                         tech="HTML | CSS | JavaScript | Express | NodeJS | MySQL | Axios | .ENV | Bootstrap | Heroku | JawsDB"
                         GitHub="https://github.com/tironam/christmaslistr"
                         App="https://tranquil-journey-72389.herokuapp.com/"
