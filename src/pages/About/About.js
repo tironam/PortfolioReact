@@ -14,6 +14,7 @@ import Typography from '@material-ui/core/Typography'
 import Paper from '@material-ui/core/Paper'
 import GitHubIcon from '@material-ui/icons/GitHub'
 import LinkedInIcon from '@material-ui/icons/LinkedIn'
+import TwitterIcon from '@material-ui/icons/Twitter'
 import EmailIcon from '@material-ui/icons/Email'
 import CopyrightIcon from '@material-ui/icons/Copyright'
 import { IconButton } from '@material-ui/core'
@@ -178,8 +179,17 @@ const About = props => {
             </ScrollAnimation>
                 <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
                     <ProjectCard
+                        name="Tironam Links"
+                        description="A Linktree clone to use on my personal social media accounts that displays numerous links to different sites in one place. Social media apps like TikTok and Instagram only let you put one link in your profile's bio, so this app allows you to share as many links as you want. Features a mobile first design since it will be viewed primarily from smartphones."
+                        role="Built by myself using the technologies mentioned below"
+                        tech="HTML | CSS | React.JS | Reactstrap | Fontawesome | Deployed on Netlify"
+                        GitHub="https://github.com/tironam/linkpage"
+                        App="https://tironamlinks.netlify.app"
+                        sm={12} 
+                    />
+                    <ProjectCard
                         name="MCU and You"
-                        description="A multi-page React site, designed as an informational resource for all things related to the Marvel Cinematic Universe. Sections of the site are organized by components into separate pages. Since many of the pages are content-heavy, they have buttons that will quickly take you to other sections of the page."
+                        description="A multi-page React site, designed as an informational resource for all things related to the Marvel Cinematic Universe. Sections of the site are organized by components into separate pages. Since many of the pages are content-heavy, they have buttons that will quickly take you to other sections of the page. This site is updated periodically as new information is released."
                         role="Built by myself using the technologies mentioned below"
                         tech="HTML | CSS | React.JS | Reactstrap | Fontawesome | React-scroll-up | React-router-hash-link | Deployed on Netlify"
                         GitHub="https://github.com/tironam/MarvelResource"
@@ -254,6 +264,9 @@ const About = props => {
             justify="center"
             alignItems="center"
             className={classes.contact}>
+                <IconButton href="https://twitter.com/tironacodes" className={classes.iconBtn} target="_blank">
+                    <TwitterIcon fontSize="large" />
+                </IconButton>
             <IconButton href="https://github.com/tironam" className={classes.iconBtn} target="_blank">
                 <GitHubIcon fontSize="large" />
             </IconButton>
