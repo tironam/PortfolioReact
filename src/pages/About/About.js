@@ -276,6 +276,12 @@ const About = props => {
             <Button href="https://www.upwork.com/freelancers/~015d0ebc71e45c1972" className={classes.iconBtn}>
                 Upwork
             </Button>
+            <Button href="https://www.fiverr.com/tironam" className={classes.iconBtn}>
+                Fiverr
+            </Button>
+            <Button href="https://www.codecast.io/users/tironam" className={classes.iconBtn}>
+                CodeCast
+            </Button>
         </Grid>
         <Grid
             container
