@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import useStyles from "../../components/Styles";
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";

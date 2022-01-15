@@ -1,24 +1,10 @@
-import React, { Component } from "react";
+import React from "react";
 import useStyles from "../../components/Styles";
 import ProjectCard from "../../components/ProjectCard";
 import Grid from "@material-ui/core/Grid";
-import Card from "@material-ui/core/Card";
-import CardActions from "@material-ui/core/CardActions";
-import CardContent from "@material-ui/core/CardContent";
-import CardMedia from "@material-ui/core/CardMedia";
-import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
-import Paper from "@material-ui/core/Paper";
-import GitHubIcon from "@material-ui/icons/GitHub";
-import LinkedInIcon from "@material-ui/icons/LinkedIn";
-import TwitterIcon from "@material-ui/icons/Twitter";
-import EmailIcon from "@material-ui/icons/Email";
-import CopyrightIcon from "@material-ui/icons/Copyright";
-import { IconButton } from "@material-ui/core";
 import "animate.css/animate.min.css";
 import ScrollAnimation from "react-animate-on-scroll";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { html5 } from "@fortawesome/free-solid-svg-icons";
 
 const Projects = (props) => {
     const classes = useStyles()
@@ -57,17 +43,6 @@ const Projects = (props) => {
               App="https://tironamlinks.netlify.app"
               sm={12}
             />
-
-            {/* <ProjectCard
-                        name="Gift Listr"
-                        description="Simple full stack gift wishlist app. Pulls list of gifts from a database and allows you to post gifts to the database. App was designed both as a personal tool to use during the 2020 holiday season and to practice working with the front and back end. Future updates are planned to improve the usability of the app."
-                        role="Built by myself using the technologies mentioned below"
-                        tech="HTML | CSS | JavaScript | Express | NodeJS | MySQL | Axios | .ENV | Bootstrap | Heroku | JawsDB"
-                        GitHub="https://github.com/tironam/christmaslistr"
-                        App="https://tranquil-journey-72389.herokuapp.com/"
-                        sm={12} /> */}
-            {/* </ScrollAnimation>
-                <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut"> */}
             <ProjectCard
               name="Dewey"
               description="Full stack library app to search for and save books a user owns. Built using PassPortJS, MongoDB, Mongoose, React, Material-UI, Reactstrap, and the OpenLibrary Search API."
@@ -87,8 +62,6 @@ const Projects = (props) => {
               GitHub="https://github.com/ShaneMit/Project2"
               App="https://listivity.herokuapp.com/"
             />
-            {/* </ScrollAnimation>
-            <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut"> */}
             <ProjectCard
               name="CoZone"
               description="A front end Covid-19 tracking app that allows the user to search case data by country. Utilizes Google’s Maps JavaScript and Places APIs and the covid19 API."

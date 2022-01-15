@@ -1,9 +1,7 @@
 import React from 'react'
-import { Link } from '@material-ui/core'
-import { makeStyles, useTheme } from '@material-ui/core/styles'
+import { makeStyles } from '@material-ui/core/styles'
 import Typography from '@material-ui/core/Typography'
 import Paper from '@material-ui/core/Paper'
-import Button from '@material-ui/core/Button'
 import GitHubIcon from '@material-ui/icons/GitHub'
 import Web from '@material-ui/icons/Web'
 import { IconButton } from '@material-ui/core'
@@ -34,7 +32,6 @@ const useStyles = makeStyles((theme) => ({
 
 const ProjectCard = props => {
     const classes = useStyles()
-    const theme = useTheme()
 
     return (
         <>

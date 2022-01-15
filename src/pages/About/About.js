@@ -1,6 +1,5 @@
-import React, { Component } from "react";
+import React from "react";
 import useStyles from '../../components/Styles'
-import ProjectCard from "../../components/ProjectCard";
 import "./about.css";
 import picture from "./profile.jpg";
 import Grid from "@material-ui/core/Grid";
@@ -54,7 +53,9 @@ const About = (props) => {
             animateOut="fadeOut" 
             delay="200"
         >
-            <img className={classes.img} src={picture} />
+            <img 
+                alt="Michael Tirona" className={classes.img} src={picture} 
+            />
         </ScrollAnimation>
         </Grid>
     </>

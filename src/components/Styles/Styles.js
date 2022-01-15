@@ -1,5 +1,4 @@
-import React from "react";
-import { makeStyles, useTheme } from "@material-ui/core/styles";
+import { makeStyles} from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -9,9 +8,6 @@ const useStyles = makeStyles((theme) => ({
     display: "inline-block",
     margin: "0 2px",
     transform: "scale(0.8)",
-  },
-  title: {
-    fontSize: 14,
   },
   pos: {
     marginBottom: 12,
@@ -50,6 +46,7 @@ const useStyles = makeStyles((theme) => ({
   title: {
     margin: theme.spacing(5),
     color: "white",
+    fontSize: 14,
     alignItems: "center",
     justifyContent: "center",
     textAlign: "center",
