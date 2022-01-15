@@ -14,9 +14,10 @@ const useStyles = makeStyles((theme) => ({
         textAlign: 'center',
         // backgroundColor: '#FEAF8A',
         maxWidth: 400,
+        borderRadius: "20px",
         margin: theme.spacing(3),
         background: "rgba(0,0,0,0.1)",
-        boxShadow: "none"
+        boxShadow: "20px 20px #2F3359"
     },
     title: {
         color: "black"
