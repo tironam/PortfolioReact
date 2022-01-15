@@ -19,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: 0,
   },
   img: {
-    maxHeight: 375,
+    maxHeight: 355,
     borderRadius: 100,
     margin: 5,
     boxShadow: "20px 20px #2F3359",
@@ -30,7 +30,7 @@ const useStyles = makeStyles((theme) => ({
   paper: {
     padding: theme.spacing(2),
     textAlign: "center",
-    maxWidth: 650,
+    maxWidth: 475,
     background: "rgba(0,0,0,0.1)",
     boxShadow: "20px 20px #2F3359",
   },
