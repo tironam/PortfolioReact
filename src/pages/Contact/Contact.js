@@ -39,7 +39,8 @@ const Contact = () => {
           textAlign="center"
           sm={12}
         >
-          <Paper className={classes.paper}>
+          <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
+            <Paper className={classes.paper}>
             <IconButton
               href="mailto:tironamichael@gmail.com"
               className={classes.iconBtn}
@@ -89,6 +90,7 @@ const Contact = () => {
               CodeCast
             </Button>
           </Paper>
+          </ScrollAnimation>
         </Grid>
       </div>
     );
