@@ -1,19 +1,19 @@
-import React from "react";
-import useStyles from "../../components/Styles";
-import Grid from "@material-ui/core/Grid";
-import Button from "@material-ui/core/Button";
-import Typography from "@material-ui/core/Typography";
-import Paper from "@material-ui/core/Paper";
-import GitHubIcon from "@material-ui/icons/GitHub";
-import LinkedInIcon from "@material-ui/icons/LinkedIn";
-import TwitterIcon from "@material-ui/icons/Twitter";
-import EmailIcon from "@material-ui/icons/Email";
-import { IconButton } from "@material-ui/core";
-import "animate.css/animate.min.css";
-import ScrollAnimation from "react-animate-on-scroll";
+import React from 'react'
+import useStyles from '../../components/Styles'
+import Grid from '@material-ui/core/Grid'
+import Button from '@material-ui/core/Button'
+import Typography from '@material-ui/core/Typography'
+import Paper from '@material-ui/core/Paper'
+import GitHubIcon from '@material-ui/icons/GitHub'
+import LinkedInIcon from '@material-ui/icons/LinkedIn'
+import TwitterIcon from '@material-ui/icons/Twitter'
+import EmailIcon from '@material-ui/icons/Email'
+import { IconButton } from '@material-ui/core'
+import 'animate.css/animate.min.css'
+import ScrollAnimation from 'react-animate-on-scroll'
 
 const Contact = () => {
-    const classes = useStyles();
+    const classes = useStyles()
 
     return (
       <>
@@ -88,7 +88,7 @@ const Contact = () => {
           </Paper>
         </Grid>
       </>
-    );
+    )
 }
 
 export default Contact

@@ -1,13 +1,13 @@
-import React from "react";
+import React from 'react'
 import useStyles from '../../components/Styles'
-import "./about.css";
-import picture from "./profile.jpg";
-import Grid from "@material-ui/core/Grid";
-import Typography from "@material-ui/core/Typography";
-import ScrollAnimation from "react-animate-on-scroll";
+import './about.css'
+import picture from './profile.jpg'
+import Grid from '@material-ui/core/Grid'
+import Typography from '@material-ui/core/Typography'
+import ScrollAnimation from 'react-animate-on-scroll'
 
 const About = (props) => {
-  const classes = useStyles();
+  const classes = useStyles()
 
   return (
     <>
@@ -59,7 +59,7 @@ const About = (props) => {
         </ScrollAnimation>
         </Grid>
     </>
-  );
-};
+  )
+}
 
-export default About;
+export default About

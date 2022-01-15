@@ -1,9 +1,9 @@
 import React from 'react'
 import useStyles from '../../components/Styles'
-import Grid from "@material-ui/core/Grid";
-import Typography from "@material-ui/core/Typography";
-import ScrollAnimation from "react-animate-on-scroll";
-import Paper from "@material-ui/core/Paper";
+import Grid from '@material-ui/core/Grid'
+import Typography from '@material-ui/core/Typography'
+import ScrollAnimation from 'react-animate-on-scroll'
+import Paper from '@material-ui/core/Paper'
 
 const Tech = () => {
     const classes = useStyles()
@@ -51,7 +51,7 @@ const Tech = () => {
           </ScrollAnimation>
         </Grid>
       </>
-    );
+    )
 }
 
 export default Tech

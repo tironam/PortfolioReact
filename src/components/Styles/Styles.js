@@ -1,4 +1,4 @@
-import { makeStyles} from "@material-ui/core/styles";
+import { makeStyles} from '@material-ui/core/styles'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -71,6 +71,6 @@ const useStyles = makeStyles((theme) => ({
   contact: {
     marginBottom: theme.spacing(7),
   },
-}));
+}))
 
-export default useStyles;
+export default useStyles
