@@ -16,7 +16,7 @@ const Contact = () => {
     const classes = useStyles()
 
     return (
-      <>
+      <div className={classes}>
         <Grid
           container
           direction="column"
@@ -44,28 +44,31 @@ const Contact = () => {
               href="mailto:tironamichael@gmail.com"
               className={classes.iconBtn}
             >
-              <EmailIcon fontSize="large" />
+              <EmailIcon fontSize="large" className={classes.icon} />
             </IconButton>
             <IconButton
               href="https://twitter.com/tironacodes"
               className={classes.iconBtn}
               target="_blank"
             >
-              <TwitterIcon fontSize="large" />
+              <TwitterIcon fontSize="large" className={classes.icon} />
             </IconButton>
             <IconButton
               href="https://github.com/tironam"
               className={classes.iconBtn}
               target="_blank"
             >
-              <GitHubIcon fontSize="large" />
+              <GitHubIcon fontSize="large" className={classes.icon} />
             </IconButton>
             <IconButton
               href="https://www.linkedin.com/in/michael-tirona-9990a7101/"
               className={classes.iconBtn}
               target="_blank"
             >
-              <LinkedInIcon fontSize="large" />
+              <LinkedInIcon 
+                fontSize="large" 
+                className={classes.icon} 
+              />
             </IconButton>
             <Button
               href="https://www.upwork.com/freelancers/~015d0ebc71e45c1972"
@@ -87,8 +90,8 @@ const Contact = () => {
             </Button>
           </Paper>
         </Grid>
-      </>
-    )
+      </div>
+    );
 }
 
 export default Contact

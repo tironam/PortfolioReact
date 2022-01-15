@@ -1,4 +1,4 @@
-import { makeStyles} from '@material-ui/core/styles'
+import { makeStyles } from '@material-ui/core/styles'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -11,6 +11,9 @@ const useStyles = makeStyles((theme) => ({
   },
   pos: {
     marginBottom: 12,
+  },
+  section: {
+    margin: 35,
   },
   card: {
     marginLeft: 0,
@@ -27,14 +30,14 @@ const useStyles = makeStyles((theme) => ({
   paper: {
     padding: theme.spacing(2),
     textAlign: "center",
-    // backgroundColor: '#FEAF8A',
     maxWidth: 650,
     background: "rgba(0,0,0,0.1)",
     boxShadow: "20px 20px #2F3359",
   },
   text: {
-    margin: theme.spacing(2),
+    margin: "10px",
     color: "white",
+    fontSize: 40,
     textAlign: "center",
   },
   name: {
@@ -51,6 +54,9 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     textAlign: "center",
   },
+  about: {
+    margin: "20px 0px 20px 0px"
+  },
   container: {
     maxWidth: "475px",
   },
@@ -60,6 +66,10 @@ const useStyles = makeStyles((theme) => ({
   iconBtn: {
     color: "white",
     marginBottom: theme.spacing(5),
+  },
+  projects: {
+    display: "flex",
+    flexDirection: "row"
   },
   tech: {
     color: "white",

@@ -9,7 +9,7 @@ const Tech = () => {
     const classes = useStyles()
 
     return (
-      <>
+      <div className={classes.section}>
         <Grid
           container
           direction="column"
@@ -19,7 +19,7 @@ const Tech = () => {
         >
           <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" delay="200">
             <section id="technology"></section>
-            <Typography className={classes.title} variant="h3">
+            <Typography className={classes.title} variant="h2">
               Technologies
             </Typography>
           </ScrollAnimation>
@@ -50,8 +50,8 @@ const Tech = () => {
             </Grid>
           </ScrollAnimation>
         </Grid>
-      </>
-    )
+      </div>
+    );
 }
 
 export default Tech

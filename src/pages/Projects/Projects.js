@@ -10,7 +10,7 @@ const Projects = (props) => {
     const classes = useStyles()
     
     return (
-      <>
+      <div className={classes.section}>
         <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" delay="200">
           <section id="projects"></section>
           <Typography className={classes.title} variant="h2">
@@ -23,6 +23,7 @@ const Projects = (props) => {
           justify="center"
           alignItems="center"
           sm={12}
+          // className={classes.projects}
         >
           <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
             <ProjectCard
@@ -72,7 +73,7 @@ const Projects = (props) => {
             />
           </ScrollAnimation>
         </Grid>
-      </>
+      </div>
     );
 }
 

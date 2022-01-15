@@ -10,16 +10,17 @@ const About = (props) => {
   const classes = useStyles()
 
   return (
-    <>
+    <div className={classes.section}>
         <Typography className={classes.name} variant="h3" align="center">
             Hi, I'm Michael Tirona
         </Typography>
         <Grid
-        container
-        direction="row"
-        justify="center"
-        alignItems="center"
-        sm={12}
+            container
+            direction="row"
+            justify="center"
+            alignItems="center"
+            sm={12}
+            className={classes.about}
         >
         <ScrollAnimation 
             animateIn="fadeIn" 
@@ -27,11 +28,11 @@ const About = (props) => {
             delay="200"
         >
             <Grid
-            container
-            direction="column"
-            alignItems="center"
-            justifyContent="center"
-            className={classes.container}
+                container
+                direction="column"
+                alignItems="center"
+                justifyContent="center"
+                className={classes.container}
             >
             <Typography className={classes.text} align="center">
                 Southern California-based front end web developer, soon relocating
@@ -58,7 +59,7 @@ const About = (props) => {
             />
         </ScrollAnimation>
         </Grid>
-    </>
+    </div>
   )
 }
 

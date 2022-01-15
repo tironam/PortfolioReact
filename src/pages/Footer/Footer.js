@@ -8,13 +8,15 @@ const Footer = () => {
     const classes = useStyles()
 
     return (
+      <div className={classes.section}>
         <Grid container direction="row" justify="center" alignItems="center">
-            <CopyrightIcon className={classes.icon} />
-            <Typography className={classes.text}>
+          <CopyrightIcon className={classes.icon} />
+          <Typography className={classes.text}>
             Michael Tirona 2022. All Rights Reserved.
-            </Typography>
+          </Typography>
         </Grid>
-    )
+      </div>
+    );
 }
 
 export default Footer
