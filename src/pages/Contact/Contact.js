@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { makeStyles, useTheme } from "@material-ui/core/styles";
+import useStyles from "../../components/Styles";
 import Grid from "@material-ui/core/Grid";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
@@ -14,33 +14,8 @@ import "animate.css/animate.min.css";
 import ScrollAnimation from "react-animate-on-scroll";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const useStyles = makeStyles((theme) => ({
-    title: {
-        fontSize: 14,
-    },
-    paper: {
-        padding: theme.spacing(2),
-        textAlign: "center",
-        maxWidth: 650,
-        background: "rgba(0,0,0,0.1)",
-        boxShadow: "20px 20px #2F3359",
-    },
-    title: {
-        margin: theme.spacing(5),
-        color: "white",
-        alignItems: "center",
-        justifyContent: "center",
-        textAlign: "center",
-    },
-    iconBtn: {
-        color: "white",
-        marginBottom: theme.spacing(5),
-    }
-}));
-
 const Contact = () => {
     const classes = useStyles();
-    const theme = useTheme();
 
     return (
       <>
