@@ -19,9 +19,12 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: 0,
   },
   img: {
-    maxHeight: 335,
+    maxHeight: 375,
+    [theme.breakpoints.down("xs")]: {
+      maxWidth: 315,
+    },
     borderRadius: 100,
-    margin: 5,
+    margin: 15,
     boxShadow: "20px 20px #2F3359",
   },
   profile: {
@@ -30,7 +33,10 @@ const useStyles = makeStyles((theme) => ({
   paper: {
     padding: theme.spacing(2),
     textAlign: "center",
-    maxWidth: 315,
+    maxWidth: 600,
+    [theme.breakpoints.down("xs")]: {
+      maxWidth: 275,
+    },
     background: "rgba(0,0,0,0.1)",
     boxShadow: "20px 20px #2F3359",
   },
@@ -55,7 +61,7 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "center",
   },
   about: {
-    margin: "20px 0px 20px 0px"
+    margin: "20px 0px 20px 0px",
   },
   container: {
     maxWidth: "475px",
@@ -69,7 +75,7 @@ const useStyles = makeStyles((theme) => ({
   },
   projects: {
     display: "flex",
-    flexDirection: "row"
+    flexDirection: "row",
   },
   tech: {
     color: "white",
@@ -81,6 +87,6 @@ const useStyles = makeStyles((theme) => ({
   contact: {
     marginBottom: theme.spacing(7),
   },
-}))
+}));
 
 export default useStyles
