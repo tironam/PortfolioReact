@@ -1,9 +1,7 @@
 import React from 'react'
-import { Link } from '@material-ui/core'
-import { makeStyles, useTheme } from '@material-ui/core/styles'
+import { makeStyles } from '@material-ui/core/styles'
 import Typography from '@material-ui/core/Typography'
 import Paper from '@material-ui/core/Paper'
-import Button from '@material-ui/core/Button'
 import GitHubIcon from '@material-ui/icons/GitHub'
 import Web from '@material-ui/icons/Web'
 import { IconButton } from '@material-ui/core'
@@ -12,11 +10,11 @@ const useStyles = makeStyles((theme) => ({
     paper: {
         padding: theme.spacing(1),
         textAlign: 'center',
-        // backgroundColor: '#FEAF8A',
         maxWidth: 400,
+        borderRadius: "20px",
         margin: theme.spacing(3),
         background: "rgba(0,0,0,0.1)",
-        boxShadow: "none"
+        boxShadow: "20px 20px #2F3359"
     },
     title: {
         color: "black"
@@ -33,7 +31,6 @@ const useStyles = makeStyles((theme) => ({
 
 const ProjectCard = props => {
     const classes = useStyles()
-    const theme = useTheme()
 
     return (
         <>
