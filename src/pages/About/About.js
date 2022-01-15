@@ -114,10 +114,10 @@ const About = props => {
                     Hi, I'm Michael Tirona.
                 </Typography>
                 <Typography className={classes.text} align="center">
-                    Southern California-based front end web developer fascinated by innovation with a background in film and art. A team-player with an eagerness to learn new technologies and dedicated to building user-friendly, responsive apps. Earned a certificate from UCI's 12-week intensive full stack web development coding boot camp. There I developed skills in React, JavaScript, responsive web design, along with other essential web development technologies. 
+                    Southern California-based front end web developer, soon relocating to Orlando, FL. Fascinated by innovation with a background in film, art, content creation, and customer service. Currently creating content as a freelance developer for CodeCast.
                 </Typography>
                 <Typography className={classes.text} align="center">
-                    With nearly a decade's worth of customer service experience at The Walt Disney Company and Apple, I thrive on constructive feedback, communication, and am always willing to learn new things.
+                    With nearly a decade's worth of customer service experience at The Walt Disney Company and Apple, I thrive on constructive feedback, communication, and am always willing to learn new things. I'm a team-player with an eagerness to learn new technologies and dedicated to building user-friendly, responsive apps. 
                 </Typography>
             </Grid>
             </ScrollAnimation>
@@ -131,7 +131,7 @@ const About = props => {
             <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" delay="200">
                 <section id="technology"></section>
                 <Typography className={classes.title} variant="h3">
-                    Technology
+                    Technologies
                  </Typography>
             </ScrollAnimation>
             <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" delay="200">
@@ -146,21 +146,18 @@ const About = props => {
                         <i className="devicon-css3-plain-wordmark">  </i>
                         <i className="devicon-javascript-plain">  </i>
                         <i className="devicon-react-original-wordmark">  </i>
-                    </Typography>
-                    <Typography variant="h2" className={classes.tech}>
-                        <i className="devicon-mysql-plain-wordmark">  </i>
-                        <i className="devicon-mongodb-plain-wordmark">  </i>
+                    {/* </Typography>
+                    <Typography variant="h2" className={classes.tech}> */}
                         <i className="devicon-bootstrap-plain-wordmark">  </i>
                         <i className="devicon-nodejs-plain-wordmark">  </i>
-                    </Typography>
-                    <Typography variant="h2" className={classes.tech}>
+                    {/* </Typography>
+                    <Typography variant="h2" className={classes.tech}> */}
                         <i className="devicon-express-original-wordmark">  </i>
                         <i className="devicon-npm-original-wordmark">  </i>
-                        <i className="devicon-github-plain-wordmark">  </i>
-                        <i className="devicon-heroku-plain-wordmark"> </i>
+                        <i className="devicon-mongodb-plain-wordmark">  </i>
                     </Typography>
                     <Typography variant="h6" className={classes.tech}>
-                        Materialize | Material-UI | Reactstrap | Sequelize | Mongoose | PassportJS
+                        Reactstrap | Mongoose | Netlify
                     </Typography>
                 </Grid>
             </ScrollAnimation>
@@ -179,6 +176,14 @@ const About = props => {
             </ScrollAnimation>
                 <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
                     <ProjectCard
+                        name="MCU and You"
+                        description="React site designed as an informational resource for all things related to the Marvel Cinematic Universe. Sections of the site are organized by components with multiple routes to simulate multiple pages. Since many of the pages are content-heavy, they have buttons that will quickly take you to other sections of the page. This site is updated periodically as new information is released."
+                        role="Built by myself using the technologies mentioned below"
+                        tech="HTML | CSS | React.JS | Reactstrap | Fontawesome | React-scroll-up | React-router-hash-link | Deployed on Netlify"
+                        GitHub="https://github.com/tironam/MarvelResource"
+                        App="https://mcuandyou.com/"
+                        sm={12} />
+                    <ProjectCard
                         name="Tironam Links"
                         description="A Linktree clone to use on my personal social media accounts that displays numerous links to different sites in one place. Social media apps like TikTok and Instagram only let you put one link in your profile's bio, so this app allows you to share as many links as you want. Features a mobile first design since it will be viewed primarily from smartphones."
                         role="Built by myself using the technologies mentioned below"
@@ -187,22 +192,15 @@ const About = props => {
                         App="https://tironamlinks.netlify.app"
                         sm={12} 
                     />
-                    <ProjectCard
-                        name="MCU and You"
-                        description="A multi-page React site, designed as an informational resource for all things related to the Marvel Cinematic Universe. Sections of the site are organized by components into separate pages. Since many of the pages are content-heavy, they have buttons that will quickly take you to other sections of the page. This site is updated periodically as new information is released."
-                        role="Built by myself using the technologies mentioned below"
-                        tech="HTML | CSS | React.JS | Reactstrap | Fontawesome | React-scroll-up | React-router-hash-link | Deployed on Netlify"
-                        GitHub="https://github.com/tironam/MarvelResource"
-                        App="https://mcuandyou.com/"
-                        sm={12} />
-                    <ProjectCard
+                    
+                    {/* <ProjectCard
                         name="Gift Listr"
                         description="Simple full stack gift wishlist app. Pulls list of gifts from a database and allows you to post gifts to the database. App was designed both as a personal tool to use during the 2020 holiday season and to practice working with the front and back end. Future updates are planned to improve the usability of the app."
                         role="Built by myself using the technologies mentioned below"
                         tech="HTML | CSS | JavaScript | Express | NodeJS | MySQL | Axios | .ENV | Bootstrap | Heroku | JawsDB"
                         GitHub="https://github.com/tironam/christmaslistr"
                         App="https://tranquil-journey-72389.herokuapp.com/"
-                        sm={12} />
+                        sm={12} /> */}
                 </ScrollAnimation>
             <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
                 <ProjectCard
@@ -290,7 +288,7 @@ const About = props => {
             alignItems="center">
                 <CopyrightIcon className={classes.icon} />
                 <Typography className={classes.text}>
-                    Michael Tirona. All Rights Reserved.
+                    Michael Tirona 2022. All Rights Reserved.
                 </Typography>
         </Grid>
     </>
