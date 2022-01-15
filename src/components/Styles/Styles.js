@@ -35,9 +35,9 @@ const useStyles = makeStyles((theme) => ({
     boxShadow: "20px 20px #2F3359",
   },
   text: {
-    margin: "10px",
+    margin: "30px",
     color: "white",
-    fontSize: 40,
+    fontSize: 20,
     textAlign: "center",
   },
   name: {
