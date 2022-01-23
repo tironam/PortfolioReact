@@ -1,8 +1,23 @@
 import React from 'react'
-import useStyles from '../../components/Styles'
+import { makeStyles } from "@material-ui/core/styles";
 import Grid from '@material-ui/core/Grid'
 import Typography from '@material-ui/core/Typography'
 import CopyrightIcon from '@material-ui/icons/Copyright'
+
+const useStyles = makeStyles((theme) => ({
+  section: {
+    margin: 35,
+  },
+  text: {
+    margin: 30,
+    color: "white",
+    fontSize: 20,
+    textAlign: "center",
+  },
+  icon: {
+    color: "white",
+  }
+}));
 
 const Footer = () => {
     const classes = useStyles()

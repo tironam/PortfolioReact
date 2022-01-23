@@ -1,10 +1,57 @@
 import React from 'react'
-import useStyles from '../../components/Styles'
+import { makeStyles } from "@material-ui/core/styles";
 import './about.css'
 import picture from './profile.jpg'
 import Grid from '@material-ui/core/Grid'
 import Typography from '@material-ui/core/Typography'
 import ScrollAnimation from 'react-animate-on-scroll'
+
+const useStyles = makeStyles((theme) => ({
+  root: {
+    minWidth: 275,
+  },
+  section: {
+    margin: 35,
+  },
+  img: {
+    maxHeight: 375,
+    [theme.breakpoints.down("xs")]: {
+      maxWidth: 315,
+    },
+    borderRadius: 100,
+    margin: 15,
+    boxShadow: "20px 20px #2F3359",
+  },
+  profile: {
+    width: 250,
+  },
+  text: {
+    margin: 30,
+    color: "white",
+    fontSize: 20,
+    textAlign: "center",
+  },
+  name: {
+    margin: theme.spacing(5),
+    color: "white",
+    fontSize: 50,
+    fontWeight: "bold",
+  },
+  title: {
+    margin: theme.spacing(5),
+    color: "white",
+    fontSize: 14,
+    alignItems: "center",
+    justifyContent: "center",
+    textAlign: "center",
+  },
+  about: {
+    margin: "20px 0px 20px 0px",
+  },
+  container: {
+    maxWidth: "475px",
+  }
+}));
 
 const About = (props) => {
   const classes = useStyles()

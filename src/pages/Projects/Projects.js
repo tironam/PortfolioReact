@@ -1,10 +1,24 @@
 import React from "react";
-import useStyles from "../../components/Styles";
+import { makeStyles } from "@material-ui/core/styles";
 import ProjectCard from "../../components/ProjectCard";
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 import "animate.css/animate.min.css";
 import ScrollAnimation from "react-animate-on-scroll";
+
+const useStyles = makeStyles((theme) => ({
+  section: {
+    margin: 35,
+  },
+  title: {
+    margin: theme.spacing(5),
+    color: "white",
+    fontSize: 30,
+    alignItems: "center",
+    justifyContent: "center",
+    textAlign: "center",
+  }
+}));
 
 const Projects = (props) => {
     const classes = useStyles()
