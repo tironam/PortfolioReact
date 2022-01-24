@@ -42,12 +42,14 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: "roboto mono",
   },
   name: {
-    margin: theme.spacing(5),
+    marginLeft: theme.spacing(10),
     color: "white",
     fontSize: 45,
+    textAlign: "left",
     [theme.breakpoints.down("xs")]: {
-      fontSize: 25,
-      margin: theme.spacing(1)
+      fontSize: 23,
+      margin: theme.spacing(1),
+      textAlign: "center",
     },
     fontWeight: "bold",
     fontFamily: "roboto mono, thin",
