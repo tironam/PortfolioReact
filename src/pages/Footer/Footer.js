@@ -9,15 +9,20 @@ const useStyles = makeStyles((theme) => ({
     margin: 35,
   },
   text: {
-    margin: 30,
+    marginTop: 40,
     color: "white",
     fontSize: 20,
     textAlign: "center",
-    fontFamily: "roboto mono"
+    fontFamily: "roboto mono",
+    [theme.breakpoints.down("xs")]: {
+      fontSize: 11
+    },
   },
   icon: {
-    color: "white",
-  }
+    marginTop: 40,
+    marginRight: 5,
+    color: "white"
+  },
 }));
 
 const Footer = () => {
