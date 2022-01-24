@@ -10,7 +10,7 @@ const useStyles = makeStyles((theme) => ({
     paper: {
         padding: theme.spacing(1),
         textAlign: 'center',
-        maxWidth: 400,
+        maxWidth: 450,
         borderRadius: "20px",
         margin: theme.spacing(3),
         background: "rgba(0,0,0,0.1)",
@@ -21,7 +21,9 @@ const useStyles = makeStyles((theme) => ({
     },
     text: {
         margin: theme.spacing(1),
-        color: "white"
+        fontSize: 15,
+        color: "white",
+        fontFamily: "roboto mono, thin",
     },
     iconBtn: {
         color: 'black'

@@ -26,7 +26,7 @@ const useStyles = makeStyles((theme) => ({
     width: 250,
   },
   text: {
-    margin: 20,
+    margin: 10,
     color: "white",
     fontSize: 18,
     textAlign: "left",
@@ -34,9 +34,12 @@ const useStyles = makeStyles((theme) => ({
       textAlign: "center",
       fontSize: 15,
       lineHeight: 1,
+      marginLeft: theme.spacing(1),
+      marginRight: theme.spacing(1),
+      marginBottom: theme.spacing(2)
     },
     lineHeight: 1.2,
-    fontFamily: "roboto mono, thin",
+    fontFamily: "roboto mono",
   },
   name: {
     margin: theme.spacing(5),
@@ -44,6 +47,7 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 45,
     [theme.breakpoints.down("xs")]: {
       fontSize: 25,
+      margin: theme.spacing(1)
     },
     fontWeight: "bold",
     fontFamily: "roboto mono, thin",

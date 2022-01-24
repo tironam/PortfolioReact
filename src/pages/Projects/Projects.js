@@ -19,6 +19,7 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     textAlign: "center",
     fontFamily: "roboto mono, thin",
+    fontWeight: "bold"
   },
 }));
 

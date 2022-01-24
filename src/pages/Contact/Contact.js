@@ -34,7 +34,8 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
     justifyContent: "center",
     textAlign: "center",
-    fontFamily: "roboto mono, thin",
+    fontFamily: "roboto mono",
+    fontWeight: "bold",
   },
   container: {
     maxWidth: "475px",
