@@ -11,13 +11,15 @@ const useStyles = makeStyles((theme) => ({
     margin: 35,
   },
   title: {
-    margin: theme.spacing(5),
+    marginTop: theme.spacing(10),
+    marginBottom: theme.spacing(3),
     color: "white",
-    fontSize: 30,
+    fontSize: 40,
     alignItems: "center",
     justifyContent: "center",
     textAlign: "center",
-  }
+    fontFamily: "roboto mono, thin",
+  },
 }));
 
 const Projects = (props) => {

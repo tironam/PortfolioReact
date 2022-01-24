@@ -20,12 +20,14 @@ const useStyles = makeStyles((theme) => ({
     boxShadow: "20px 20px #2F3359",
   },
   title: {
-    margin: theme.spacing(5),
+    marginTop: theme.spacing(10),
+    marginBottom: theme.spacing(3),
     color: "white",
-    fontSize: 30,
+    fontSize: 40,
     alignItems: "center",
     justifyContent: "center",
     textAlign: "center",
+    fontFamily: "roboto mono, thin",
   },
   container: {
     maxWidth: "475px",
@@ -36,7 +38,7 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
     justifyContent: "center",
     textAlign: "center",
-  }
+  },
 }));
 
 const Tech = () => {

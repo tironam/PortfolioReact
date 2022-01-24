@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme) => ({
   img: {
     maxHeight: 375,
     [theme.breakpoints.down("xs")]: {
-      maxWidth: 315,
+      maxWidth: 375,
     },
     borderRadius: 100,
     margin: 15,
@@ -26,31 +26,34 @@ const useStyles = makeStyles((theme) => ({
     width: 250,
   },
   text: {
-    margin: 30,
+    margin: 20,
     color: "white",
-    fontSize: 20,
-    textAlign: "center",
+    fontSize: 18,
+    textAlign: "left",
+    [theme.breakpoints.down("xs")]: {
+      textAlign: "center",
+      fontSize: 15,
+      lineHeight: 1,
+    },
+    lineHeight: 1.2,
+    fontFamily: "roboto mono, thin",
   },
   name: {
     margin: theme.spacing(5),
     color: "white",
-    fontSize: 50,
+    fontSize: 45,
+    [theme.breakpoints.down("xs")]: {
+      fontSize: 25,
+    },
     fontWeight: "bold",
-  },
-  title: {
-    margin: theme.spacing(5),
-    color: "white",
-    fontSize: 14,
-    alignItems: "center",
-    justifyContent: "center",
-    textAlign: "center",
+    fontFamily: "roboto mono, thin",
   },
   about: {
     margin: "20px 0px 20px 0px",
   },
   container: {
     maxWidth: "475px",
-  }
+  },
 }));
 
 const About = (props) => {
@@ -87,7 +90,7 @@ const About = (props) => {
                     film, art, content creation, and customer service. Currently
                     creating content as a freelance developer for CodeCast.
                 </Typography>
-                <br />
+                {/* <br /> */}
                 <Typography className={classes.text} align="center">
                     With nearly a decade's worth of customer service experience at The
                     Walt Disney Company and Apple, I thrive on constructive feedback,
