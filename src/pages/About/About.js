@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme) => ({
   img: {
     maxHeight: 375,
     [theme.breakpoints.down("xs")]: {
-      maxWidth: 375,
+      maxWidth: 325,
     },
     borderRadius: 100,
     margin: 15,
