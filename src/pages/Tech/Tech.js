@@ -1,9 +1,47 @@
 import React from 'react'
-import useStyles from '../../components/Styles'
+import { makeStyles } from "@material-ui/core/styles";
 import Grid from '@material-ui/core/Grid'
 import Typography from '@material-ui/core/Typography'
 import ScrollAnimation from 'react-animate-on-scroll'
 import Paper from '@material-ui/core/Paper'
+
+const useStyles = makeStyles((theme) => ({
+  section: {
+    margin: 35,
+  },
+  paper: {
+    padding: theme.spacing(2),
+    textAlign: "center",
+    maxWidth: 600,
+    [theme.breakpoints.down("xs")]: {
+      maxWidth: 275,
+    },
+    background: "rgba(0,0,0,0.1)",
+    boxShadow: "20px 20px #2F3359",
+  },
+  title: {
+    marginTop: theme.spacing(10),
+    marginBottom: theme.spacing(3),
+    color: "white",
+    fontSize: 40,
+    alignItems: "center",
+    justifyContent: "center",
+    textAlign: "center",
+    fontFamily: "roboto mono",
+    fontWeight: "bold"
+  },
+  container: {
+    maxWidth: "475px",
+  },
+  tech: {
+    color: "white",
+    maxWidth: "475px",
+    alignItems: "center",
+    justifyContent: "center",
+    textAlign: "center",
+    fontFamily: "roboto mono"
+  },
+}));
 
 const Tech = () => {
     const classes = useStyles()

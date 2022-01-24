@@ -31,7 +31,8 @@ const useStyles = makeStyles((theme) => ({
     },
     btn: {
         color: 'white',
-        flexGrow: 1
+        flexGrow: 1,
+        fontFamily: "roboto mono"
     }
 }))
 

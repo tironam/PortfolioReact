@@ -1,10 +1,64 @@
 import React from 'react'
-import useStyles from '../../components/Styles'
+import { makeStyles } from "@material-ui/core/styles";
 import './about.css'
 import picture from './profile.jpg'
 import Grid from '@material-ui/core/Grid'
 import Typography from '@material-ui/core/Typography'
 import ScrollAnimation from 'react-animate-on-scroll'
+
+const useStyles = makeStyles((theme) => ({
+  root: {
+    minWidth: 275,
+  },
+  section: {
+    margin: 35,
+  },
+  img: {
+    maxHeight: 375,
+    [theme.breakpoints.down("xs")]: {
+      maxWidth: 375,
+    },
+    borderRadius: 100,
+    margin: 15,
+    boxShadow: "20px 20px #2F3359",
+  },
+  profile: {
+    width: 250,
+  },
+  text: {
+    margin: 10,
+    color: "white",
+    fontSize: 18,
+    textAlign: "left",
+    [theme.breakpoints.down("xs")]: {
+      textAlign: "center",
+      fontSize: 15,
+      lineHeight: 1,
+      marginLeft: theme.spacing(1),
+      marginRight: theme.spacing(1),
+      marginBottom: theme.spacing(2)
+    },
+    lineHeight: 1.2,
+    fontFamily: "roboto mono",
+  },
+  name: {
+    margin: theme.spacing(5),
+    color: "white",
+    fontSize: 45,
+    [theme.breakpoints.down("xs")]: {
+      fontSize: 25,
+      margin: theme.spacing(1)
+    },
+    fontWeight: "bold",
+    fontFamily: "roboto mono, thin",
+  },
+  about: {
+    margin: "20px 0px 20px 0px",
+  },
+  container: {
+    maxWidth: "475px",
+  },
+}));
 
 const About = (props) => {
   const classes = useStyles()
@@ -40,7 +94,7 @@ const About = (props) => {
                     film, art, content creation, and customer service. Currently
                     creating content as a freelance developer for CodeCast.
                 </Typography>
-                <br />
+                {/* <br /> */}
                 <Typography className={classes.text} align="center">
                     With nearly a decade's worth of customer service experience at The
                     Walt Disney Company and Apple, I thrive on constructive feedback,
