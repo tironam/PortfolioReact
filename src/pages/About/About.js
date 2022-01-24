@@ -11,12 +11,12 @@ const useStyles = makeStyles((theme) => ({
     minWidth: 275,
   },
   section: {
-    margin: 35,
+    margin: 5,
   },
   img: {
     maxHeight: 375,
     [theme.breakpoints.down("xs")]: {
-      maxWidth: 375,
+      maxWidth: 325,
     },
     borderRadius: 100,
     margin: 15,
@@ -28,26 +28,28 @@ const useStyles = makeStyles((theme) => ({
   text: {
     margin: 10,
     color: "white",
-    fontSize: 18,
+    fontSize: 20,
     textAlign: "left",
     [theme.breakpoints.down("xs")]: {
       textAlign: "center",
-      fontSize: 15,
-      lineHeight: 1,
-      marginLeft: theme.spacing(1),
-      marginRight: theme.spacing(1),
+      fontSize: 16,
+      lineHeight: 1.3,
+      marginLeft: theme.spacing(2),
+      marginRight: theme.spacing(2),
       marginBottom: theme.spacing(2)
     },
     lineHeight: 1.2,
     fontFamily: "roboto mono",
   },
   name: {
-    margin: theme.spacing(5),
+    marginLeft: theme.spacing(14),
     color: "white",
     fontSize: 45,
+    textAlign: "left",
     [theme.breakpoints.down("xs")]: {
-      fontSize: 25,
-      margin: theme.spacing(1)
+      fontSize: 23,
+      margin: theme.spacing(1),
+      textAlign: "center",
     },
     fontWeight: "bold",
     fontFamily: "roboto mono, thin",
@@ -65,57 +67,45 @@ const About = (props) => {
 
   return (
     <div className={classes.section}>
-        <Typography className={classes.name} variant="h3" align="center">
-            Hi, I'm Michael Tirona
-        </Typography>
-        <Grid
+      <Typography className={classes.name} variant="h3" align="center">
+        Hi, I'm Michael Tirona
+      </Typography>
+      <Grid
+        container
+        direction="row"
+        justify="center"
+        alignItems="center"
+        sm={12}
+        className={classes.about}
+      >
+        <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" delay="200">
+          <Grid
             container
-            direction="row"
-            justify="center"
+            direction="column"
             alignItems="center"
-            sm={12}
-            className={classes.about}
-        >
-        <ScrollAnimation 
-            animateIn="fadeIn" 
-            animateOut="fadeOut" 
-            delay="200"
-        >
-            <Grid
-                container
-                direction="column"
-                alignItems="center"
-                justifyContent="center"
-                className={classes.container}
-            >
-                <Typography className={classes.text} align="center">
-                    Southern California-based front end web developer, soon relocating
-                    to Orlando, FL. Fascinated by innovation with a background in
-                    film, art, content creation, and customer service. Currently
-                    creating content as a freelance developer for CodeCast.
-                </Typography>
-                {/* <br /> */}
-                <Typography className={classes.text} align="center">
-                    With nearly a decade's worth of customer service experience at The
-                    Walt Disney Company and Apple, I thrive on constructive feedback,
-                    communication, and am always willing to learn new things. I'm a
-                    team-player with an eagerness to learn new technologies and
-                    dedicated to building user-friendly, responsive apps.
-                </Typography>
-            </Grid>
+            justifyContent="center"
+            className={classes.container}
+          >
+            <Typography className={classes.text} align="center">
+              I'm a front end web developer that's fascinated by innovation with
+              a background in customer service and content creation.
+              With a decade's worth of extensive customer service experience at The
+              Walt Disney Company and Apple, I'm a team player that thrives on constructive feedback, communication, and am always willing to learn new things.
+            </Typography>
+            {/* <br /> */}
+            <Typography className={classes.text} align="center">
+              Currently based out of Southern California, I'll soon be making
+              the move to Orlando, FL. Open to freelance and full time
+              opportunities, both local and remote. At the moment, I'm creating content as a freelance developer for CodeCast.
+            </Typography>
+          </Grid>
         </ScrollAnimation>
-        <ScrollAnimation 
-            animateIn="fadeIn" 
-            animateOut="fadeOut" 
-            delay="200"
-        >
-            <img 
-                alt="Michael Tirona" className={classes.img} src={picture} 
-            />
+        <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" delay="200">
+          <img alt="Michael Tirona" className={classes.img} src={picture} />
         </ScrollAnimation>
-        </Grid>
+      </Grid>
     </div>
-  )
+  );
 }
 
 export default About

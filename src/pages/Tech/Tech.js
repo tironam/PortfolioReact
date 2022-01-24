@@ -28,7 +28,10 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     textAlign: "center",
     fontFamily: "roboto mono",
-    fontWeight: "bold"
+    fontWeight: "bold",
+    [theme.breakpoints.down("xs")]: {
+      fontSize: 30,
+    },
   },
   container: {
     maxWidth: "475px",
@@ -39,7 +42,19 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
     justifyContent: "center",
     textAlign: "center",
-    fontFamily: "roboto mono"
+    fontFamily: "roboto mono",
+  },
+  misc: {
+    color: "white",
+    maxWidth: "475px",
+    alignItems: "center",
+    justifyContent: "center",
+    textAlign: "center",
+    fontFamily: "roboto mono",
+    [theme.breakpoints.down("xs")]: {
+      fontSize: 15,
+      wordSpacing: -3
+    },
   },
 }));
 
@@ -81,7 +96,7 @@ const Tech = () => {
                   <i className="devicon-npm-original-wordmark"> </i>
                   <i className="devicon-mongodb-plain-wordmark"> </i>
                 </Typography>
-                <Typography variant="h6" className={classes.tech}>
+                <Typography variant="h6" className={classes.misc}>
                   Reactstrap | Mongoose | Netlify
                 </Typography>
               </Paper>

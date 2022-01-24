@@ -7,28 +7,45 @@ import Web from '@material-ui/icons/Web'
 import { IconButton } from '@material-ui/core'
 
 const useStyles = makeStyles((theme) => ({
-    paper: {
-        padding: theme.spacing(1),
-        textAlign: 'center',
-        maxWidth: 450,
-        borderRadius: "20px",
-        margin: theme.spacing(3),
-        background: "rgba(0,0,0,0.1)",
-        boxShadow: "20px 20px #2F3359"
+  paper: {
+    padding: theme.spacing(1),
+    textAlign: "center",
+    maxWidth: 450,
+    borderRadius: "20px",
+    margin: theme.spacing(3),
+    background: "rgba(0,0,0,0.1)",
+    boxShadow: "20px 20px #2F3359",
+    [theme.breakpoints.down("xs")]: {
+      marginLeft: theme.spacing(1),
+      marginRight: theme.spacing(1),
     },
-    title: {
-        color: "black"
+  },
+  title: {
+    color: "black",
+  },
+  text: {
+    margin: theme.spacing(1),
+    fontSize: 18,
+    color: "white",
+    fontFamily: "roboto mono",
+    [theme.breakpoints.down("xs")]: {
+      fontSize: 15,
+      lineHeight: 1.3,
     },
-    text: {
-        margin: theme.spacing(1),
-        fontSize: 15,
-        color: "white",
-        fontFamily: "roboto mono, thin",
+  },
+  name: {
+    margin: theme.spacing(1),
+    fontSize: 27,
+    color: "white",
+    fontFamily: "roboto mono",
+    [theme.breakpoints.down("xs")]: {
+      fontSize: 20
     },
-    iconBtn: {
-        color: 'black'
-    }
-}))
+  },
+  iconBtn: {
+    color: "white",
+  },
+}));
 
 
 const ProjectCard = props => {
@@ -37,7 +54,7 @@ const ProjectCard = props => {
     return (
         <>
             <Paper className={classes.paper}>
-                <Typography variant="h4" className={classes.text}>
+                <Typography variant="h4" className={classes.name}>
                     {props.name}
                 </Typography>
                 <Typography className={classes.text}>

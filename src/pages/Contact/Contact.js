@@ -36,6 +36,9 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "center",
     fontFamily: "roboto mono",
     fontWeight: "bold",
+    [theme.breakpoints.down("xs")]: {
+      fontSize: 30,
+    }
   },
   container: {
     maxWidth: "475px",
