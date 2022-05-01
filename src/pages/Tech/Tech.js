@@ -1,9 +1,9 @@
-import React from 'react'
+import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import Grid from '@material-ui/core/Grid'
-import Typography from '@material-ui/core/Typography'
-import ScrollAnimation from 'react-animate-on-scroll'
-import Paper from '@material-ui/core/Paper'
+import Grid from "@material-ui/core/Grid";
+import Typography from "@material-ui/core/Typography";
+import ScrollAnimation from "react-animate-on-scroll";
+import Paper from "@material-ui/core/Paper";
 
 const useStyles = makeStyles((theme) => ({
   section: {
@@ -53,58 +53,59 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: "roboto mono",
     [theme.breakpoints.down("xs")]: {
       fontSize: 15,
-      wordSpacing: -3
+      wordSpacing: -3,
     },
   },
 }));
 
 const Tech = () => {
-    const classes = useStyles()
+  const classes = useStyles();
 
-    return (
-      <div className={classes.section}>
-        <Grid
-          container
-          direction="column"
-          justify="center"
-          alignItems="center"
-          sm={12}
-        >
-          <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" delay="200">
-            <section id="technology"></section>
-            <Typography className={classes.title} variant="h2">
-              Technologies
-            </Typography>
-          </ScrollAnimation>
-          <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" delay="200">
-            <Grid
-              container
-              direction="column"
-              justify="center"
-              alignItems="center"
-              sm={12}
-            >
-              <Paper className={classes.paper}>
-                <Typography variant="h2" className={classes.tech}>
-                  <i className="devicon-html5-plain-wordmark"> </i>
-                  <i className="devicon-css3-plain-wordmark"> </i>
-                  <i className="devicon-javascript-plain"> </i>
-                  <i className="devicon-react-original-wordmark"> </i>
-                  <i className="devicon-bootstrap-plain-wordmark"> </i>
-                  <i className="devicon-nodejs-plain-wordmark"> </i>
-                  <i className="devicon-express-original-wordmark"> </i>
-                  <i className="devicon-npm-original-wordmark"> </i>
-                  <i className="devicon-mongodb-plain-wordmark"> </i>
-                </Typography>
-                <Typography variant="h6" className={classes.misc}>
-                  Reactstrap | Mongoose | Netlify
-                </Typography>
-              </Paper>
-            </Grid>
-          </ScrollAnimation>
-        </Grid>
-      </div>
-    );
-}
+  return (
+    <div className={classes.section}>
+      <Grid
+        container
+        direction="column"
+        justify="center"
+        alignItems="center"
+        sm={12}
+      >
+        <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" delay="200">
+          <section id="technology"></section>
+          <Typography className={classes.title} variant="h2">
+            Technologies
+          </Typography>
+        </ScrollAnimation>
+        <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" delay="200">
+          <Grid
+            container
+            direction="column"
+            justify="center"
+            alignItems="center"
+            sm={12}
+          >
+            <Paper className={classes.paper}>
+              <Typography variant="h2" className={classes.tech}>
+                <i className="devicon-html5-plain-wordmark"> </i>
+                <i className="devicon-css3-plain-wordmark"> </i>
+                <i className="devicon-javascript-plain"> </i>
+                <i className="devicon-typescript-plain"> </i>
+                <i className="devicon-react-original-wordmark"> </i>
+                <i className="devicon-bootstrap-plain-wordmark"> </i>
+                <i className="devicon-nodejs-plain-wordmark"> </i>
+                <i className="devicon-express-original-wordmark"> </i>
+                <i className="devicon-npm-original-wordmark"> </i>
+                <i className="devicon-mongodb-plain-wordmark"> </i>
+              </Typography>
+              <Typography variant="h6" className={classes.misc}>
+                Storybook | Material UI | Reactstrap | Mongoose | Netlify
+              </Typography>
+            </Paper>
+          </Grid>
+        </ScrollAnimation>
+      </Grid>
+    </div>
+  );
+};
 
-export default Tech
+export default Tech;
