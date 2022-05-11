@@ -98,7 +98,8 @@ const Tech = () => {
                 <i className="devicon-mongodb-plain-wordmark"> </i>
               </Typography>
               <Typography variant="h6" className={classes.misc}>
-                Storybook | Material UI | Reactstrap | Mongoose | Netlify
+                Styled-Components | Storybook | Material UI | Reactstrap |
+                Mongoose | Netlify
               </Typography>
             </Paper>
           </Grid>

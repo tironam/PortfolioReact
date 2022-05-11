@@ -97,8 +97,8 @@ const About = (props) => {
             {/* <br /> */}
             <Typography className={classes.text} align="center">
               Based in central Florida. Open to freelance and full time
-              opportunities, both local and remote. At the moment, I'm a
-              Frontend Engineer Intern at Webstacks.
+              opportunities, both local and remote. Most recently completed a
+              Frontend Engineering internship at Webstacks.
             </Typography>
           </Grid>
         </ScrollAnimation>
