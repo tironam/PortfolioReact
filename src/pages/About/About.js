@@ -32,7 +32,7 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "left",
     [theme.breakpoints.down("xs")]: {
       textAlign: "center",
-      fontSize: 16,
+      fontSize: 14,
       lineHeight: 1.3,
       marginLeft: theme.spacing(2),
       marginRight: theme.spacing(2),
@@ -42,7 +42,6 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: "roboto mono",
   },
   name: {
-    marginLeft: theme.spacing(14),
     color: "white",
     fontSize: 45,
     textAlign: "center",
@@ -97,8 +96,8 @@ const About = (props) => {
             {/* <br /> */}
             <Typography className={classes.text} align="center">
               Based in central Florida. Open to freelance and full time
-              opportunities, both local and remote. At the moment, I'm a
-              Frontend Engineer Intern at Webstacks.
+              opportunities, both local and remote. Most recently completed a
+              Frontend Engineering internship at Webstacks.
             </Typography>
           </Grid>
         </ScrollAnimation>
