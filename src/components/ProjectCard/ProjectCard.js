@@ -1,10 +1,10 @@
-import React from 'react'
-import { makeStyles } from '@material-ui/core/styles'
-import Typography from '@material-ui/core/Typography'
-import Paper from '@material-ui/core/Paper'
-import GitHubIcon from '@material-ui/icons/GitHub'
-import Web from '@material-ui/icons/Web'
-import { IconButton } from '@material-ui/core'
+import React from "react";
+import { makeStyles } from "@material-ui/core/styles";
+import Typography from "@material-ui/core/Typography";
+import Paper from "@material-ui/core/Paper";
+import GitHubIcon from "@material-ui/icons/GitHub";
+import Web from "@material-ui/icons/Web";
+import { IconButton } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
   paper: {
@@ -23,23 +23,49 @@ const useStyles = makeStyles((theme) => ({
   title: {
     color: "black",
   },
+  label: {
+    marginTop: theme.spacing(3),
+    marginLeft: theme.spacing(2),
+    marginRight: theme.spacing(2),
+    fontSize: 18,
+    color: "white",
+    fontFamily: "roboto mono",
+    [theme.breakpoints.down("xs")]: {
+      marginTop: theme.spacing(2),
+      marginLeft: theme.spacing(1),
+      marginRight: theme.spacing(1),
+      fontSize: 14,
+      lineHeight: 1.3,
+    },
+  },
   text: {
     margin: theme.spacing(1),
     fontSize: 18,
     color: "white",
     fontFamily: "roboto mono",
     [theme.breakpoints.down("xs")]: {
-      fontSize: 15,
+      fontSize: 14,
+      lineHeight: 1.3,
+    },
+  },
+  private: {
+    margin: theme.spacing(0),
+    fontSize: 12,
+    color: "white",
+    fontFamily: "roboto mono",
+    [theme.breakpoints.down("xs")]: {
+      fontSize: 10,
       lineHeight: 1.3,
     },
   },
   name: {
-    margin: theme.spacing(1),
+    marginTop: theme.spacing(2),
     fontSize: 27,
     color: "white",
     fontFamily: "roboto mono",
     [theme.breakpoints.down("xs")]: {
-      fontSize: 20
+      fontSize: 20,
+      marginTop: theme.spacing(2),
     },
   },
   iconBtn: {
@@ -47,42 +73,49 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+const ProjectCard = (props) => {
+  const classes = useStyles();
 
-const ProjectCard = props => {
-    const classes = useStyles()
-
-    return (
-        <>
-            <Paper className={classes.paper}>
-                <Typography variant="h4" className={classes.name}>
-                    {props.name}
-                </Typography>
-                <Typography className={classes.text}>
-                    {props.description}
-                </Typography>
-                <Typography variant="h6" className={classes.text}>
-                    My role:
-                </Typography>
-                <Typography className={classes.text}>
-                    {props.role}
-                </Typography>
-                <Typography variant="h6" className={classes.text}>
-                    Technologies used:
-                </Typography>
-                <Typography className={classes.text}>
-                    {props.tech}
-                </Typography>
-                <Typography variant="h6" className={classes.text}>
-                    Repository and Deployed App:
-                </Typography>
-                <IconButton href={props.GitHub} className={classes.iconBtn} target="_blank">
-                    <GitHubIcon fontSize="large" />
-                </IconButton>
-                <IconButton href={props.App} className={classes.iconBtn} target="_blank">
-                    <Web fontSize="large" />
-                </IconButton>
-            </Paper>
-        </>
-    )
-}
-export default ProjectCard
+  return (
+    <>
+      <Paper className={classes.paper}>
+        <Typography variant="h4" className={classes.name}>
+          {props.name}
+        </Typography>
+        <Typography className={classes.label}>{props.description}</Typography>
+        <Typography variant="h6" className={classes.label}>
+          My role:
+        </Typography>
+        <Typography className={classes.text}>{props.role}</Typography>
+        <Typography variant="h6" className={classes.label}>
+          Technologies used:
+        </Typography>
+        <Typography className={classes.text}>{props.tech}</Typography>
+        <Typography variant="h6" className={classes.label}>
+          {props.GitHub === "" ? "Deployed App:" : "Repo and Deployed App:"}
+        </Typography>
+        <IconButton
+          href={props.GitHub}
+          className={classes.iconBtn}
+          target="_blank"
+        >
+          {props.GitHub === "" ? (
+            <Typography className={classes.private} disabled="true">
+              Repository is private
+            </Typography>
+          ) : (
+            <GitHubIcon fontSize="large" />
+          )}
+        </IconButton>
+        <IconButton
+          href={props.App}
+          className={classes.iconBtn}
+          target="_blank"
+        >
+          <Web fontSize="large" />
+        </IconButton>
+      </Paper>
+    </>
+  );
+};
+export default ProjectCard;

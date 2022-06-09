@@ -93,13 +93,10 @@ const Tech = () => {
                 <i className="devicon-react-original-wordmark"> </i>
                 <i className="devicon-bootstrap-plain-wordmark"> </i>
                 <i className="devicon-nodejs-plain-wordmark"> </i>
-                <i className="devicon-express-original-wordmark"> </i>
                 <i className="devicon-npm-original-wordmark"> </i>
-                <i className="devicon-mongodb-plain-wordmark"> </i>
               </Typography>
               <Typography variant="h6" className={classes.misc}>
-                Styled-Components | Storybook | Material UI | Reactstrap |
-                Mongoose | Netlify
+                Styled-Components | Storybook | Material UI | Netlify
               </Typography>
             </Paper>
           </Grid>
